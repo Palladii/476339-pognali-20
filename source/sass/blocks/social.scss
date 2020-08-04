@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  @include ul();
+  justify-content: center;
+  margin-bottom: 41px;
+}
+
+.social__item {
+  margin-right: 27px;
+
+  &--yellow {
+    @include size(45px, 45px);
+    background-color: $basic-yellow;
+    border-radius: 50%;
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  text-align: center;
+  padding-top: 11px;
+}

@@ -1,0 +1,19 @@
+.blockquote {
+  background-color: $basic-blue;
+  color: $basic-white;
+}
+
+.blockquote__review {
+  @include size(167px, 100%);
+  padding: 48px 0 109px;
+  margin-top: -50px;
+}
+
+.blockquote__text {
+  margin-bottom: 18px;
+}
+
+.blockquote__author {
+  font-weight: bold;
+  font-style: normal;
+}

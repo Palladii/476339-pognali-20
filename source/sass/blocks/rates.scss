@@ -1,0 +1,98 @@
+.rates {
+  position: relative;
+  background-color: $basic-extra-blue;
+  border-radius: 30px;
+  margin-top: -65px;
+  z-index: -2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    @include size(200px, 200px);
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: scale(0.5);
+    top: 10px;
+    right: -30px;
+  }
+}
+
+.rates__title {
+  @include title();
+  width: 107px;
+  padding-top: 64px;
+  margin-bottom: 56px;
+}
+
+.rates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rates-list__item {
+  position: relative;
+  margin-bottom: 32px;
+
+  &--1 {
+    &::after {
+      position: absolute;
+      content: "1";
+      text-align: center;
+      padding-top: 8px;
+      @include font(normal, 16px, 16px);
+      @include size(34px, 34px);
+      border-radius: 50%;
+      color: $basic-white;
+      background-color: $special-orange;
+      top: -8px;
+      right: 1px;
+    }
+  }
+
+  &--2 {
+    &::after {
+      position: absolute;
+      content: "2";
+      text-align: center;
+      padding-top: 8px;
+      @include font(normal, 16px, 16px);
+      @include size(34px, 34px);
+      border-radius: 50%;
+      color: $basic-white;
+      background-color: $special-yellow;
+      top: -8px;
+      right: 1px;
+    }
+  }
+
+  &--3 {
+    &::after {
+      position: absolute;
+      content: "3";
+      text-align: center;
+      padding-top: 8px;
+      @include font(normal, 16px, 16px);
+      @include size(34px, 34px);
+      border-radius: 50%;
+      color: $basic-white;
+      background-color: $basic-yellow;
+      top: -8px;
+      right: 1px;
+    }
+  }
+}
+
+.rates-list__title {
+  @include font(300, 16px, 16px);
+  margin: 0;
+}
+
+.rates__link {
+  display: block;
+  text-decoration: none;
+  @include font(bold, 16px, 16px);
+  padding-bottom: 38px;
+  color: $special-extra-blue;
+}

@@ -1,0 +1,23 @@
+.site-users {
+  position: relative;
+  background-color: $basic-dark-blue;
+  z-index: -1;
+  margin-top: -50px;  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position:
+    150px 100px,
+    -5px 355px;
+  border-radius: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 113px;
+    height: 132px;
+    z-index: -2;
+    background-color: $basic-blue;
+    border-radius: 0 20px 20px 0;
+  }
+}

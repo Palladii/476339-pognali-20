@@ -1,0 +1,56 @@
+.user-nav {
+  @include font(bold, 16px, 18px);
+  @include ul();
+  &--flex {
+    display: flex;
+    margin-top: -40px;
+  }
+}
+
+.user-nav__link {
+  @include a();
+}
+
+.user-nav__btn {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.user-nav__item {
+  position: relative;
+  margin-bottom: 27px;
+
+  &--last {
+    order: 3;
+    margin-left: 88px;
+  }
+}
+
+.user-nav__svg-wrapper {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-color: $special-dark-blue;
+  padding: 14px 13.5px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+
+  &--orange {
+    background-color: $special-orange;
+    left: 0;
+    top: -1px;
+  }
+
+  &--yellow {
+    background-color: $special-yellow;
+    left: 44px;
+    top: -1px;
+  }
+}
+
+.user-nav__text {
+  margin-left: 61px;
+  text-transform: uppercase;
+}
+

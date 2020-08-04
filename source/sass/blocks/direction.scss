@@ -1,0 +1,78 @@
+.direction {
+  background-color: $basic-light-blue;
+  margin-top: -50px;
+  border-radius: 40px;
+}
+
+.direction__title {
+  @include title();
+  padding-top: 101px;
+  margin: 0 0 19px 24px;
+}
+
+.direction__text {
+  color: $basic-grey;
+  margin: 0 0 60px 24px;
+}
+
+.direction__list {
+  @include ul();
+}
+
+.direction__item {
+  background-color: $basic-white;
+  border-radius: 10px;
+  min-height: 190px;
+  margin-bottom: 11px;
+}
+
+.direction__img {
+  width: 270px;
+  min-height: 110px;
+  border-radius: 10px;
+}
+
+.direction__description-wrapper {
+  background-color: $basic-white;
+  position: relative;
+  border-radius: 10px;
+  margin-top: -20px;
+  z-index: 1;
+}
+
+.direction__country-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  width: 222px;
+  margin-left: 24px;
+}
+
+.direction__country {
+  width: 178px;
+  @include font(bold, 21px, 21px);
+  margin: 0 0 2px 0;
+}
+
+.direction__quantity {
+  color: $basic-blue;
+  opacity: 0.3;
+}
+
+.direction__tagline {
+  display: block;
+  @include font(500, 16px, 18px);
+  color: $basic-grey;
+  opacity: 0.3;
+  margin-left: 24px;
+}
+
+.direction__btn {
+  @include font(bold, 18px, 18px);
+  color: $basic-special-blue;
+  text-transform: none;
+  text-align: left;
+  padding: 15px 0 0 24px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}

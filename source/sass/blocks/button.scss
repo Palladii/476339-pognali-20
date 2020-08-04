@@ -1,0 +1,17 @@
+.button {
+  position: relative;
+  @include font(bold, 17px, 30px);
+  @include button();
+  @include a();
+  @include size(270px, 50px);
+  color: $basic-blue;
+  background-color: $basic-yellow;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 6px;
+
+  &--small {
+    @include size(190px, 40px);
+    order: 3;
+  }
+}

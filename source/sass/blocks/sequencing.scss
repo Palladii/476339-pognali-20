@@ -1,0 +1,54 @@
+.sequencing {
+  background-color: $basic-medium-blue;
+}
+
+.sequencing__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $basic-yellow;
+  border-radius: 10px;
+  top: -60px;
+}
+
+.sequencing__item {
+  @include font(bold, 18px, 18px);
+  display: flex;
+  justify-content: space-between;
+  color: $basic-blue;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-top: -20px;
+  min-height: 80px;
+
+  &--orange {
+    background-color: $special-orange;
+  }
+
+  &--light-orange {
+    background-color: $special-light-orange;
+  }
+
+  &--special-yellow {
+    background-color: $special-yellow;
+  }
+
+  &--basic-yellow {
+    background-color: $basic-yellow;
+  }
+}
+
+.sequencing__text {
+  display: inline-block;
+  @include size(150px, 100%);
+  margin-left: 24px;
+  padding-top: 14px;
+}
+
+.sequencing__number {
+  position: relative;
+  top: 15px;
+  margin-right: 19px;
+  color: $basic-white;
+}

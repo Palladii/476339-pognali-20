@@ -1,0 +1,46 @@
+.like-btn {
+  position: relative;
+  display: block;
+
+  user-select: none;
+}
+
+.like-btn__input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: -37px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: $special-grey;
+  cursor: pointer;
+}
+
+.like-btn__input-radio:checked + label::after {
+  background-color: $basic-pink;
+}
+
+.like-btn__input-radio + label::after {
+  content: "";
+  position: absolute;
+  left: 54px;
+  top: -26px;
+  width: 22px;
+  height: 11px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.like-btn__input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 54px;
+  top: -26px;
+  width: 12px;
+  height: 11px;
+  background-image: url("../img/heart-active.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

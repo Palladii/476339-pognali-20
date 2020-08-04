@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 46px;
+  background-color: $extra-light-grey;
+  border-radius: 240px;
+}
+
+.pagination__control {
+
+  @include size(134.5px, 51px);
+  background-color: $basic-white;
+
+  &--back {
+    position: relative;
+    border-radius: 40px 0 0 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      @include size(20px, 13px);
+      background-image: url("../img/triangle-arrow-left.svg");
+      background-repeat: no-repeat;
+      top: 20px;
+      left: 63px;
+    }
+  }
+
+  &--next {
+    position: relative;
+    border-radius: 0 40px 40px 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      @include size(20px, 13px);
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      top: 20px;
+      left: 63px;
+    }
+  }
+}

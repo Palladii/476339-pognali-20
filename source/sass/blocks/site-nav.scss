@@ -1,0 +1,7 @@
+.site-nav {
+  @include ul();
+  @include font(500, 30px, 35px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 51px;
+}

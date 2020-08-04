@@ -1,0 +1,31 @@
+.about-service {
+  position: relative;
+  background-color: $basic-blue;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  z-index: 1;
+}
+
+.about-service__title {
+  @include font(bold, 24px, 24px);
+  margin: 0 0 19px 29px;
+  padding-top: 33px;
+  color: $special_orange;
+}
+
+.about-service__text {
+  @include size(238px, 100%);
+  color: $basic-white;
+  margin: 0 0 20px 29px;
+}
+
+.about-service__promo {
+  @include size(202px, 100%);
+  @include font(bold, 16px, 22px);
+  color: $basic-white;
+  margin-left: 29px;
+  padding-bottom: 82px;
+}
