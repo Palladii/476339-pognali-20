@@ -35,17 +35,17 @@
         <a class="button user-nav__btn js-login" href="#">Авторизация</a>
       </li>
       <li class="user-nav__item">
-        <a class="user-nav__tel" href="tel:+749511111111">
+        <a class="user-nav__tel" href="tel:8 800 555-86-28">
           <img class="user-nav__tel-img" src="https://via.placeholder.com/" width="40" height="40"
                alt="Наш телефон">
-          <span class="visually-hidden">Телефон +749511111111</span>
+          <span class="visually-hidden">8 800 555-86-28</span>
         </a>
       </li>
       <li class="user-nav__item">
-        <a class="user-nav__mail" href="mailto:go@gmail.com">
+        <a class="user-nav__mail" href="mail@htmlacademy.ru">
           <img class="user-nav__mail-img" src="https://via.placeholder.com/" width="40" height="40"
                alt="Наша электронная почта">
-          <span class="visually-hidden">Электронный адрес go@gmail.com</span>
+          <span class="visually-hidden">Электронный адрес mail@htmlacademy.ru</span>
         </a>
       </li>
     </ul>
@@ -53,20 +53,287 @@
 </header>
 
 <main>
-  <h1 class="header__title">Попутчики</h1>
-  /*Пропущен красный блок*/
+  <section class="main-title">
+    <div class="container">
+      <h1 class="main-title__title">Попутчики</h1>
+    </div>
+  </section>
+
+  <section class="filter">
+    <div class="container">
+      <h2 class="filter__title">Фильтрация по странам:</h2>
+      <button class="filter__btn" type="button" aria-label="Открыть или закрыть"></button>
+    </div>
+  </section>
+
+  <section class="filter-country">
+    <div class="container">
+      <ul class="filter-country__list">
+        <li class="filter-country__item filter-country__item--active">
+          <a href="#" class="filter-country__link">Eвропа</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="#" class="filter-country__link">Aзия</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="#" class="filter-country__link">Aмерика</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="#" class="filter-country__link">Острова</a>
+        </li>
+      </ul>
+      <table class="filter-country__table alphabet">
+        <tr class="alphabet__rows">
+          <td class="alphabet__columns alphabet__columns--active">
+            <a href="form.html#a" class="alphabet__link">а</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">б</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">в</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">г</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">д</a>
+          </td>
+        </tr>
+        <tr class="alphabet__rows">
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">е</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">з</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">и</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">к</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">л</a>
+          </td>
+        </tr>
+        <tr class="alphabet__rows">
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">м</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">н</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">о</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">п</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">р</a>
+          </td>
+        </tr>
+        <tr class="alphabet__rows">
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">с</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">т</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">у</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">ф</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">х</a>
+          </td>
+        </tr>
+        <tr class="alphabet__rows">
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">ч</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">ш</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">э</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">ю</a>
+          </td>
+          <td class="alphabet__columns">
+            <a href="#" class="alphabet__link">я</a>
+          </td>
+        </tr>
+      </table>
+
+      <ul class="filter-country__list country-list" id="a">
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Австралия</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Австрия</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Азербайджан</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Албания</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Алжир</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Ангола</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Андорра</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Антигуа и Барбуда</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Аргентина</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Армения</a>
+        </li>
+        <li class="country-list__item">
+          <a href="" class="country-list__link">Афганистан</a>
+        </li>
+      </ul>
+      <button class="filter-country__btn button" type="button">свернуть</button>
+    </div>
+  </section>
+
+  <section class="filters">
+    <div class="container">
+      <h2 class="filters__title">Подберите идеального попутчика</h2>
+      <form class="filter-traveler" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="filter-traveler__fieldset">
+          <legend class="filter-traveler__legend">
+            <a class="filter-traveler__btn" href="#">хобби</a>
+          </legend>
+          <ul class="filter-traveler__list">
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="gym" name="gym" checked>
+              <label class="filter-traveler__label" for="gym">Спортзал</label>
+            </li>
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="hookah" name="hookah">
+              <label class="filter-traveler__label" for="hookah">Кальян</label>
+            </li>
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="couch" name="couch">
+              <label class="filter-traveler__label" for="couch">Диван</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-traveler__fieldset">
+          <legend class="filter-traveler__legend">
+            <a class="filter-traveler__btn" href="#">музыка</a>
+          </legend>
+          <ul class="filter-traveler__list">
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="rock" name="rock" checked>
+              <label class="filter-traveler__label" for="rock">Тяжелый рок</label>
+            </li>
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="rap" name="rap">
+              <label class="filter-traveler__label" for="rap">Русский рэп</label>
+            </li>
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="eurodance" name="eurodance">
+              <label class="filter-traveler__label" for="eurodance">Евроденс</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-traveler__fieldset">
+          <legend class="filter-traveler__legend">
+            <a class="filter-traveler__btn" href="#">еда</a>
+          </legend>
+          <ul class="filter-traveler__list">
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="meat-eating" name="meat-eating" checked>
+              <label class="filter-traveler__label" for="meat-eating">Мясоед</label>
+            </li>
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="proper-nutrition" name="proper-nutrition">
+              <label class="filter-traveler__label" for="proper-nutrition">Сидит на ПП</label>
+            </li>
+            <li class="filter-traveler__item">
+              <input class="filter-traveler__control" type="checkbox" id="vegan" name="vegan">
+              <label class="filter-traveler__label" for="vegan">Веган-сыроед</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-traveler__fieldset">
+          <legend class="filter-traveler__legend">
+            <a class="filter-traveler__btn" href="#">транспорт</a>
+          </legend>
+          <ul class="filter-traveler__list transport-list">
+            <li class="transport-list__item">
+              <label class="transport-list__icon" for="plane" aria-label="Самолет">
+                <input class="transport-list__checkbox" type="checkbox" id="plane" name="plane" checked>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <input class="transport-list__checkbox" type="checkbox" id="bus" name="bus" checked>
+              <label class="transport-list__icon" for="bus" aria-label="Автобус"></label>
+            </li>
+            <li class="transport-list__item">
+              <input class="transport-list__checkbox" type="checkbox" id="bicycle" name="bicycle">
+              <label class="transport-list__icon" for="bicycle" aria-label="Велосипед"></label>
+            </li>
+            <li class="transport-list__item">
+              <input class="transport-list__checkbox" type="checkbox" id="walk" name="walk" checked>
+              <label class="transport-list__icon" for="walk" aria-label="Пешком"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-traveler__fieldset">
+          <legend class="filter-traveler__legend">
+            <a class="filter-traveler__btn" href="#">левел</a>
+          </legend>
+          <div class="filter-traveler__level-controls">
+            <label class="filter-traveler__min">
+              <input type="number" name="min" min="0" value="30" step="10">
+            </label>
+            <label class="filter-traveler__max">
+              <input type="number" name="max" max="100" value="100" step="10">
+            </label>
+          </div>
+          <div class="filter-traveler__scale-controls">
+            <div class="filter-traveler__scale">
+              <div class="filter-traveler__bar"></div>
+            </div>
+            <div class="filter-traveler__toggle filter-traveler__toggle--min" tabindex="0"></div>
+            <div class="filter-traveler__toggle filter-traveler__toggle--max" tabindex="0"></div>
+          </div>
+        </fieldset>
+        <button class="filter-traveler__btn-submit button" type="submit">Показать</button>
+      </form>
+    </div>
+  </section>
 
   <section class="cards">
     <div class="card">
       <h2 class="visually-hidden">Карточка пользователя</h2>
-      <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      <a href="#">
+        <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      </a>
       <div class="card__likes like-btn">
-          <label class="like-btn__btn" for="like-Tanya">
-            <input type="radio" name="like" class="like-btn__input" value="like"
-                   id="like-Tanya" checked>
-          </label>
+        <label class="like-btn__btn" for="like-Tanya">
+          <input type="radio" name="like" class="like-btn__input" value="like"
+                 id="like-Tanya" checked>
+        </label>
       </div>
-      <h3 class="card__name">Таня Фирсова</h3>
+      <a href="#">
+        <h3 class="card__name">Таня Фирсова</h3>
+      </a>
       <span class="card__status" aria-label="онлайн статус"></span>
       <span class="card__remoteness" aria-label="Удаленность">1,5 м</span>
       <p class="card__hash-tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -113,9 +380,6 @@
         <h4 class="card__subtitle">левел:</h4>
         <div class="level">
           <div class="level__count">99</div>
-          <!--Будет скрыто стилями
-          <span class="level__text">level</span>
-          -->
         </div>
       </div>
       <a class="button card__btn" href="#">Позвать!</a>
@@ -123,14 +387,18 @@
 
     <div class="card">
       <h2 class="visually-hidden">Карточка пользователя</h2>
-      <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      <a href="#">
+        <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      </a>
       <div class="card__likes like-btn">
         <label class="like-btn__btn" for="like-Petr">
           <input type="radio" name="like" class="like-btn__input" value="like"
-                   id="like-Petr">
-          </label>
+                 id="like-Petr">
+        </label>
       </div>
-      <h3 class="card__name">Петя Демин</h3>
+      <a href="#">
+        <h3 class="card__name">Петя Демин</h3>
+      </a>
       <span class="card__status" aria-label="онлайн статус"></span>
       <span class="card__remoteness" aria-label="Удаленность">1500</span>
       <p class="card__hash-tag">#бургер #бар #футбол #концерт #крафт</p>
@@ -174,9 +442,6 @@
         <h4 class="card__subtitle">левел:</h4>
         <div class="level">
           <div class="level__count">80</div>
-          <!--Будет скрыто стилями
-          <span class="level__text">level</span>
-          -->
         </div>
       </div>
       <a class="button card__btn" href="#">Позвать!</a>
@@ -184,14 +449,18 @@
 
     <div class="card">
       <h2 class="visually-hidden">Карточка пользователя</h2>
-      <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      <a href="#">
+        <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      </a>
       <div class="card__likes like-btn">
         <label class="like-btn__btn" for="like-Mark">
           <input type="radio" name="like" class="like-btn__input" value="like"
-                   id="like-Mark">
-          </label>
+                 id="like-Mark">
+        </label>
       </div>
-      <h3 class="card__name">Марк Смолов</h3>
+      <a href="#">
+        <h3 class="card__name">Марк Смолов</h3>
+      </a>
       <span class="card__status" aria-label="онлайн статус"></span>
       <span class="card__remoteness" aria-label="Удаленность">170</span>
       <p class="card__hash-tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -238,9 +507,6 @@
         <h4 class="card__subtitle">левел:</h4>
         <div class="level">
           <div class="level__count">25</div>
-          <!--Будет скрыто стилями
-          <span class="level__text">level</span>
-          -->
         </div>
       </div>
       <a class="button card__btn" href="#">Позвать!</a>
@@ -248,14 +514,18 @@
 
     <div class="card">
       <h2 class="visually-hidden">Карточка пользователя</h2>
-      <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      <a href="#">
+        <img class="card__avatar" src="https://via.placeholder.com/" width="40" height="40" alt="Аватарка">
+      </a>
       <div class="card__likes like-btn">
         <label class="like-btn__btn" for="like-Larisa">
           <input type="radio" name="like" class="like-btn__input" value="like"
-                   id="like-Larisa">
-          </label>
+                 id="like-Larisa">
+        </label>
       </div>
-      <h3 class="card__name">Лариса Роговая</h3>
+      <a href="#">
+        <h3 class="card__name">Лариса Роговая</h3>
+      </a>
       <span class="card__status" aria-label="онлайн статус"></span>
       <span class="card__remoteness" aria-label="Удаленность">23</span>
       <p class="card__hash-tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -299,9 +569,6 @@
         <h4 class="card__subtitle">левел:</h4>
         <div class="level">
           <div class="level__count">50</div>
-          <!--Будет скрыто стилями
-          <span class="level__text">level</span>
-          -->
         </div>
       </div>
       <a class="button card__btn" href="#">Позвать!</a>

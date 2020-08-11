@@ -35,17 +35,17 @@
         <a class="button user-nav__btn js-login" href="#">Авторизация</a>
       </li>
       <li class="user-nav__item">
-        <a class="user-nav__tel" href="tel:+749511111111">
+        <a class="user-nav__tel" href="tel:8 800 555-86-28">
           <img class="user-nav__tel-img" src="https://via.placeholder.com/" width="40" height="40"
                alt="Наш телефон">
-          <span class="visually-hidden">Телефон +749511111111</span>
+          <span class="visually-hidden">Телефон 8 800 555-86-28</span>
         </a>
       </li>
       <li class="user-nav__item">
-        <a class="user-nav__mail" href="mailto:go@gmail.com">
+        <a class="user-nav__mail" href="mailto:mail@htmlacademy.ru">
           <img class="user-nav__mail-img" src="https://via.placeholder.com/" width="40" height="40"
                alt="Наша электронная почта">
-          <span class="visually-hidden">Электронный адрес go@gmail.com</span>
+          <span class="visually-hidden">Электронный адрес mail@htmlacademy.ru</span>
         </a>
       </li>
     </ul>
@@ -61,14 +61,15 @@
           <a class="button user-nav__btn js-login" href="#">Авторизация</a>
         </li>
         <li class="user-nav__item">
-          <a class="user-nav__tel" href="tel:+749511111111" aria-label="Телефон +749511111111">
+          <a class="user-nav__tel" href="tel:8 800 555-86-28" aria-label="Телефон 8 800 555-86-28">
             <img class="user-nav__tel-img" src="https://via.placeholder.com/" width="40" height="40"
                  alt="Наш телефон">
             <span class="visually-hidden">Наш телефон</span>
           </a>
         </li>
         <li class="user-nav__item">
-          <a class="user-nav__list__mail" href="mailto:go@gmail.com" aria-label="Электронный адрес go@gmail.com">
+          <a class="user-nav__list__mail" href="mailto:mail@htmlacademy.ru"
+             aria-label="Электронный адрес mail@htmlacademy.ru">
             <img class="user-nav__mail-img" src="https://via.placeholder.com/" width="40" height="40"
                  alt="Наша электронная почта">
             <span class="visually-hidden">Наша электронная почта</span>
@@ -232,9 +233,7 @@
             <span class="visually-hidden">Самолет</span>
           </li>
           <li class="transport-list__item">
-            <img class="transport-list__img transport-list__img--bus" src="https://via.placeholder.com/" width="40"
-                 height="40" alt="автобус">
-            <span class="visually-hidden">Автобус</span>
+
           </li>
           <li class="transport-list__item">
             <img class="transport-list__img transport-list__img--bicycle transport-list--active"
@@ -284,8 +283,47 @@
     <a class="rates__link" href="#">Показать тарифы для бизнеса</a>
   </section>
 
-  /*Пропущены два красных блока*/
+  <section class="registration">
+    <div class="container">
+      <h2 class="registration__title">Заинтересовались?</h2>
+      <p class="registration__text">Зарегистрируйтесь,<br>это быстро и бесплатно!<br>Уже зарегистрированы? Тогда<br>
+        скорее<a class="registration__link" href="#">авторизуйтесь</a>.</p>
+      <form class="registration__form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="registration__label">
+          <input class="registration__control" type="email" name="email" aria-label="Ваша электронная почта"
+                 placeholder="E-mail" required>
+        </label>
+        <button class="registration__btn" type="submit">
+          <span class="visually-hidden">Нажмите для регистрации</span>
+        </button>
+      </form>
+      <p class="registration__text">Остались вопросы?<br>Мы с радостью на них ответим!</p>
+      <ul class="registration__list user-nav">
+        <li class="user-nav__item">
+          <a class="user-nav__tel" href="tel:8 800 555-86-28">
+            <img class="user-nav__tel-img" src="https://via.placeholder.com/" width="40" height="40"
+                 alt="Наш телефон">
+            <span class="user-nav__text">Телефон 8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__mail" href="mailto:mail@htmlacademy.ru">
+            <img class="user-nav__mail-img" src="https://via.placeholder.com/" width="40" height="40"
+                 alt="Наша электронная почта">
+            <span class="user-nav__text">Электронный адрес mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <section class="map">
+    <div class="container">
+      <address class="map__address">ул. Большая Конюшенная, 19/8</address>
+      <a class="map__btn" href="#">Проложить маршрут</a>
+      <img class="map__img" src="https://via.placeholder.com/320x424" alt="Карта" width="320" height="424">
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
