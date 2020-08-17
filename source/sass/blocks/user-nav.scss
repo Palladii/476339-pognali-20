@@ -1,6 +1,7 @@
 .user-nav {
   @include font(bold, 16px, 18px);
   @include ul();
+
   &--flex {
     display: flex;
     margin-top: -40px;
@@ -53,4 +54,3 @@
   margin-left: 61px;
   text-transform: uppercase;
 }
-
