@@ -15,5 +15,12 @@
 
 .header__toggle {
   @include size(25px, 11px);
-  @include button;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
 }

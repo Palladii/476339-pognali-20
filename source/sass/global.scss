@@ -17,8 +17,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }

@@ -3,16 +3,6 @@
   height: $height;
 }
 
-@mixin button() {
-  display: inline-block;
-  padding: 0;
-  border: none;
-  color: inherit;
-  background-color: inherit;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
 @mixin ul() {
   list-style: none;
   margin: 0;
@@ -30,14 +20,3 @@
   color: $basic-dark-blue;
 }
 
-@mixin title() {
-  @include font(bold, 24px, 24px);
-  color: $special_orange;
-}
-
-
-@mixin name-title() {
-  @include font(bold, 21px, 21px);
-  color: $basic-special-blue;
-  margin: 0;
-}

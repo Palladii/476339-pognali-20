@@ -9,7 +9,7 @@
 </head>
 
 <body class="page">
-<header class="header">
+<header class="header header--light">
   <div class="container">
     <div class="header__wrapper">
       <a class="header__logo logo" href="index.html">
@@ -41,8 +41,8 @@
     </div>
   </div>
 
-    <section class="menu-nav">
-      <div class="container">
+  <section class="menu-nav">
+    <div class="container">
       <nav>
         <ul class="menu-nav__list site-nav">
           <li class="site-nav__item">
@@ -127,8 +127,8 @@
           </li>
         </ul>
       </nav>
-    </section>
-  </div>
+    </div>
+  </section>
 </header>
 
 <main>
@@ -136,7 +136,7 @@
     <div class="container">
       <h1 class="main-nav__title">В путешествие с крутыми попутчиками!</h1>
       <nav>
-        <ul class="user-nav__list user-nav user-nav--flex">
+        <ul class="main-nav__list user-nav user-nav--flex">
           <li class="user-nav__item user-nav__item--last">
             <a class="button button--small user-nav__link user-nav__btn user-nav__btn--small js-login" href="#">Авторизация</a>
           </li>
@@ -187,30 +187,28 @@
   <section class="sequencing">
     <div class="container">
       <h2 class="visually-hidden">Последовательность действий</h2>
-      <ol class="sequencing__list">
-        <li class="sequencing__item sequencing__item--orange">
-          <span class="sequencing__text">Выберите направление</span>
-          <span class="sequencing__number">1</span>
-        </li>
-        <li class="sequencing__item sequencing__item--light-orange">
-          <span class="sequencing__text">Изучите идеи путешественников</span>
-          <span class="sequencing__number">2</span>
-        </li>
-        <li class="sequencing__item sequencing__item--special-yellow">
-          <span class="sequencing__text">Находите тех,<br>кто похож на вас</span>
-          <span class="sequencing__number">3</span>
-        </li>
-        <li class="sequencing__item sequencing__item--basic-yellow">
-          <span class="sequencing__text">Путешествуйте вместе!</span>
-          <span class="sequencing__number">4</span>
-        </li>
-      </ol>
+      <div class="sequencing-numbered">
+        <ol class="sequencing__list">
+          <li class="sequencing__item">
+            <span class="sequencing__text">Выберите направление</span>
+          </li>
+          <li class="sequencing__item">
+            <span class="sequencing__text">Изучите идеи путешественников</span>
+          </li>
+          <li class="sequencing__item">
+            <span class="sequencing__text">Находите тех,<br>кто похож на вас</span>
+          </li>
+          <li class="sequencing__item">
+            <span class="sequencing__text">Путешествуйте вместе!</span>
+          </li>
+        </ol>
+      </div>
     </div>
   </section>
 
   <section class="about-service">
     <div class="container">
-      <h2 class="about-service__title">О сервисе</h2>
+      <h2 class="about-service__title" id="about-service">О сервисе</h2>
       <p class="about-service__text">Любое путешествие веселее<br>с попутчиками, которые на одной волне с тобой!
         Делитесь
         своими идеями путешествий и черпайте вдохновение в чужих.</p>
@@ -484,20 +482,22 @@
   <section class="rates">
     <div class="container">
       <h2 class="rates__title">Добавьте свой профиль</h2>
-      <ol class="rates-list">
-        <li class="rates-list__item rates-list__item--1">
-          <h4 class="rates-list__title">Базовое размещение</h4>
-          <span>Бесплатно</span>
-        </li>
-        <li class="rates-list__item rates-list__item--2">
-          <h4 class="rates-list__title">Вывод на первых позициях</h4>
-          <span>99 руб./мес</span>
-        </li>
-        <li class="rates-list__item rates-list__item--3">
-          <h4 class="rates-list__title">Кастомный цвет карточки</h4>
-          <span>59 руб./мес</span>
-        </li>
-      </ol>
+      <div class="rates__numbered">
+        <ol class="rates-list">
+          <li class="rates-list__item">
+            <h4 class="rates-list__title">Базовое размещение</h4>
+            <span>Бесплатно</span>
+          </li>
+          <li class="rates-list__item">
+            <h4 class="rates-list__title">Вывод на первых позициях</h4>
+            <span>99 руб./мес</span>
+          </li>
+          <li class="rates-list__item">
+            <h4 class="rates-list__title">Кастомный цвет карточки</h4>
+            <span>59 руб./мес</span>
+          </li>
+        </ol>
+      </div>
       <a class="rates__link" href="#">Показать тарифы для бизнеса</a>
     </div>
   </section>

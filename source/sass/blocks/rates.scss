@@ -19,69 +19,45 @@
 }
 
 .rates__title {
-  @include title();
+  @include font(bold, 24px, 24px);
+  color: $special_orange;
   width: 107px;
   padding-top: 64px;
   margin-bottom: 56px;
 }
 
 .rates-list {
+  position: relative;
   list-style: none;
+  counter-reset: li;
   margin: 0;
   padding: 0;
+}
+
+.rates__numbered h4::before {
+  position: absolute;
+  left: 235px;
+  counter-increment: li;
+  content: counters(li, ".");
+  @include font(normal, 16px, 16px);
+  @include size(34px, 34px);
+  padding: 10px 13px 11px;
+  border-radius: 50%;
+  color: $basic-white;
+  background-color: $special-orange;
+}
+
+.rates__numbered:nth-child(2)  h4::before {
+  background-color: $special-yellow;
+}
+
+.rates__numbered:nth-child(3)  h4::before {
+  background-color: $basic-yellow;
 }
 
 .rates-list__item {
   position: relative;
   margin-bottom: 32px;
-
-  &--1 {
-    &::after {
-      position: absolute;
-      content: "1";
-      text-align: center;
-      padding-top: 8px;
-      @include font(normal, 16px, 16px);
-      @include size(34px, 34px);
-      border-radius: 50%;
-      color: $basic-white;
-      background-color: $special-orange;
-      top: -8px;
-      right: 1px;
-    }
-  }
-
-  &--2 {
-    &::after {
-      position: absolute;
-      content: "2";
-      text-align: center;
-      padding-top: 8px;
-      @include font(normal, 16px, 16px);
-      @include size(34px, 34px);
-      border-radius: 50%;
-      color: $basic-white;
-      background-color: $special-yellow;
-      top: -8px;
-      right: 1px;
-    }
-  }
-
-  &--3 {
-    &::after {
-      position: absolute;
-      content: "3";
-      text-align: center;
-      padding-top: 8px;
-      @include font(normal, 16px, 16px);
-      @include size(34px, 34px);
-      border-radius: 50%;
-      color: $basic-white;
-      background-color: $basic-yellow;
-      top: -8px;
-      right: 1px;
-    }
-  }
 }
 
 .rates-list__title {

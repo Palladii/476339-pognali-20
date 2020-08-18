@@ -2,12 +2,21 @@
   background-color: $basic-medium-blue;
 }
 
+.sequencing-numbered li::after {
+  position: relative;
+  top: 22px;
+  right: 21px;
+  color: $basic-white;
+  counter-increment: li;
+  content: counters(li, ".");
+}
+
 .sequencing__list {
   position: relative;
   list-style: none;
+  counter-reset: li;
   margin: 0;
   padding: 0;
-  background-color: $basic-yellow;
   border-radius: 10px;
   top: -60px;
 }
@@ -21,20 +30,17 @@
   border-radius: 10px;
   margin-top: -20px;
   min-height: 80px;
+  background-color: $special-orange;
 
-  &--orange {
-    background-color: $special-orange;
-  }
-
-  &--light-orange {
+  &:nth-child(2) {
     background-color: $special-light-orange;
   }
 
-  &--special-yellow {
+  &:nth-child(3) {
     background-color: $special-yellow;
   }
 
-  &--basic-yellow {
+  &:nth-child(4) {
     background-color: $basic-yellow;
   }
 }

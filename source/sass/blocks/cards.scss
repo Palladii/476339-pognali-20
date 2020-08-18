@@ -1,3 +1,22 @@
 .cards {
   background-color: $basic-light-blue;
 }
+
+.cards__link {
+  display: block;
+  position: relative;
+  @include font(bold, 17px, 30px);
+  text-decoration: none;
+  color: $basic-special-blue;
+  text-transform: uppercase;
+  margin: 18px 0 28px 80px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    @include size(18px, 18px);
+    background-image: url("../img/show-more-plus.svg");
+    top: 5px;
+    left: -30px;
+  }
+}

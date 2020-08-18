@@ -6,7 +6,8 @@
 }
 
 .travelers__title {
-  @include title();
+  @include font(bold, 24px, 24px);
+  color: $special_orange;
 }
 
 .travelers__tagline {
