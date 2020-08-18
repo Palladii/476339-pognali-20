@@ -1,0 +1,38 @@
+.rates-list {
+  position: relative;
+  list-style: none;
+  counter-reset: li;
+  margin: 0;
+  padding: 0;
+}
+
+.rates-list__item h4::before {
+  position: absolute;
+  left: 235px;
+  counter-increment: li;
+  content: counters(li, ".");
+  @include font(normal, 16px, 16px);
+  @include size(34px, 34px);
+  padding: 10px 13px 11px;
+  border-radius: 50%;
+  color: $basic-white;
+  background-color: $special-orange;
+}
+
+.rates-list__item:nth-child(2) h4::before {
+  background-color: $special-yellow;
+}
+
+.rates-list__item:nth-child(3) h4::before {
+  background-color: $basic-yellow;
+}
+
+.rates-list__item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.rates-list__title {
+  @include font(300, 16px, 16px);
+  margin: 0;
+}

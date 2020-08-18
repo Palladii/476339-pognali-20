@@ -1,0 +1,22 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin ul() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font($weight: 300, $size: 16px, $height: 22px) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin a() {
+  text-decoration: none;
+  color: $basic-dark-blue;
+}
+

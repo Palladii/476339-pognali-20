@@ -1,0 +1,7 @@
+.logo {
+  @include size(96px, 15px);
+}
+
+.logo__img {
+  margin: 37px 0 40px;
+}

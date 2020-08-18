@@ -1,0 +1,26 @@
+.header {
+  background-color: $blue-original;
+
+  &--dark {
+    background-color: $basic-blue;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 52px;
+}
+
+.header__toggle {
+  @include size(25px, 11px);
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.travelers {
+  margin: 0 auto 54px;
+  padding-top: 102px;
+  width: 240px;
+  color: $basic-white;
+}
+
+.travelers__title {
+  @include font(bold, 24px, 24px);
+  color: $special-orange;
+}
+
+.travelers__tagline {
+  font-weight: bold;
+}
