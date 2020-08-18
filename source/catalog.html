@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Погнали - направления</title>
 </head>
 
@@ -47,10 +47,10 @@
         <a class="site-nav__link" href="index.html">О сервисе</a>
       </li>
       <li class="site-nav__item">
-        <a class="site-nav__link">Направления</a>
+        <a class="site-nav__link" href="form.html">Направления</a>
       </li>
       <li class="site-nav__item">
-        <a class="site-nav__link" href="catalog.html">Попутчики</a>
+        <a class="site-nav__link">Попутчики</a>
       </li>
     </ul>
     <ul class="menu-nav__list user-nav">
@@ -91,22 +91,17 @@
         <div class="card__container">
           <h2 class="visually-hidden">Карточка пользователя</h2>
           <div class="card__avatar-wrapper">
-            <div>
-              <img class="card__avatar card__avatar--round" src="img/firsova-mobile@1x.jpg" width="70"
-                   height="70" alt="Аватарка">
-              <div class="card__likes like-btn">
-                <input class="visually-hidden like-btn__input-radio" type="radio" name="like" value="like"
-                       id="heart-Tanya" checked>
-                <label class="like-btn__btn" for="heart-Tanya"></label>
-              </div>
+            <img class="card__avatar card__avatar--round" src="img/firsova-mobile@1x.jpg" width="70"
+                 height="70" alt="Аватарка">
+            <div class="card__name-wrapper">
+              <h3 class="card__name card__name--round">Таня<br>Фирсова</h3>
+              <span class="card__status" aria-label="онлайн статус"></span>
             </div>
-            <div>
-              <div class="card__name-wrapper">
-                <h3 class="card__name card__name--round">Таня<br>Фирсова</h3>
-                <span class="card__status" aria-label="онлайн статус"></span>
-              </div>
-              <span class="card__remoteness" aria-label="Удаленность">1,5 м</span>
-            </div>
+          </div>
+          <div class="card__likes like-btn">
+            <input class="like-btn__input" type="checkbox" id="likes-Tanya" checked/>
+            <label class="like-btn__btn" for="likes-Tanya">like</label>
+            <span class="like-btn__count">1,5 м</span>
           </div>
           <p class="card__hash-tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
           <h4 class="card__subtitle card__subtitle--country">хочет посетить:</h4>
@@ -212,22 +207,17 @@
         <div class="card__container">
           <h2 class="visually-hidden">Карточка пользователя</h2>
           <div class="card__avatar-wrapper">
-            <div>
               <img class="card__avatar card__avatar--round" src="img/demin-mobile@1x.jpg" width="70" height="70"
                    alt="Аватарка">
-              <div class="card__likes like-btn">
-                <input class="visually-hidden like-btn__input-radio" type="radio" name="like" value="like"
-                       id="heart-petr">
-                <label class="like-btn__btn" for="heart-petr"></label>
-              </div>
-            </div>
-            <div>
               <div class="card__name-wrapper">
                 <h3 class="card__name card__name--round">Петя<br>Демин</h3>
                 <span class="card__status" aria-label="онлайн статус"></span>
               </div>
-              <span class="card__remoteness" aria-label="Удаленность">1500</span>
-            </div>
+          </div>
+          <div class="card__likes like-btn">
+            <input class="like-btn__input" type="checkbox" id="likes-Peter" checked/>
+            <label class="like-btn__btn" for="likes-Peter">like</label>
+            <span class="like-btn__count">1500</span>
           </div>
           <p class="card__hash-tag">#бургер #бар #футбол #концерт #крафт</p>
           <h4 class="card__subtitle card__subtitle--country">хочет посетить:</h4>
@@ -321,7 +311,7 @@
                 <span class="card__level-text">level</span>
               </div>
             </div>
-            </div>
+          </div>
           <a class="button card__btn" href="#">Позвать!</a>
         </div>
       </div>
@@ -330,22 +320,17 @@
         <div class="card__container">
           <h2 class="visually-hidden">Карточка пользователя</h2>
           <div class="card__avatar-wrapper">
-            <div>
               <img class="card__avatar card__avatar--round" src="img/smolov-mobile@1x.jpg" width="70" height="70"
                    alt="Аватарка">
-              <div class="card__likes like-btn">
-                <input class="visually-hidden like-btn__input-radio" type="radio" name="like" value="like"
-                       id="heart-mark">
-                <label class="like-btn__btn" for="heart-mark"></label>
-              </div>
-            </div>
-            <div>
               <div class="card__name-wrapper">
                 <h3 class="card__name card__name--round">Марк<br>Смолов</h3>
                 <span class="card__status" aria-label="онлайн статус"></span>
               </div>
-              <span class="card__remoteness" aria-label="Удаленность">170</span>
-            </div>
+          </div>
+          <div class="card__likes like-btn">
+            <input class="like-btn__input" type="checkbox" id="likes-Mark" checked/>
+            <label class="like-btn__btn" for="likes-Mark">like</label>
+            <span class="like-btn__count">170</span>
           </div>
           <p class="card__hash-tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
           <h4 class="card__subtitle card__subtitle--country">хочет посетить:</h4>
@@ -449,22 +434,17 @@
         <div class="card__container">
           <h2 class="visually-hidden">Карточка пользователя</h2>
           <div class="card__avatar-wrapper">
-            <div>
               <img class="card__avatar card__avatar--round" src="img/rogovaya-mobile@1x.jpg" width="70"
                    height="70" alt="Аватарка">
-              <div class="card__likes like-btn">
-                <input class="visually-hidden like-btn__input-radio" type="radio" name="like" value="like"
-                       id="heart-larisa">
-                <label class="like-btn__btn" for="heart-larisa"></label>
-              </div>
-            </div>
-            <div>
               <div class="card__name-wrapper">
                 <h3 class="card__name card__name--round">Лариса<br>Роговая</h3>
                 <span class="card__status card__status--active" aria-label="онлайн статус"></span>
               </div>
-              <span class="card__remoteness" aria-label="Удаленность">23</span>
-            </div>
+          </div>
+          <div class="card__likes like-btn">
+            <input class="like-btn__input" type="checkbox" id="likes-Larisa" checked/>
+            <label class="like-btn__btn" for="likes-Larisa">like</label>
+            <span class="like-btn__count">23</span>
           </div>
           <p class="card__hash-tag">#образование #карьера #учеба #линкедин</p>
           <h4 class="card__subtitle card__subtitle--country">хочет посетить:</h4>
@@ -616,7 +596,9 @@
       <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5657L13.5 33.3892L27 25.5657V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z" fill="#192144"/>
+          <path
+            d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5657L13.5 33.3892L27 25.5657V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z"
+            fill="#192144"/>
         </svg>
         <span class="visually-hidden">Сайт HTML Academy</span>
       </a>

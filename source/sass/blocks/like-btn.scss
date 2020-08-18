@@ -1,46 +1,72 @@
 .like-btn {
-  position: relative;
-  display: block;
-
-  user-select: none;
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  display: flex;
+  align-items: center;
 }
 
-.like-btn__input-radio + label::before {
-  content: "";
-  position: absolute;
-  left: 45px;
-  top: -37px;
+.like-btn__input {
+  display: none;
+}
+
+.like-btn__btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   width: 31px;
-  height: 31px;
+  height: 30px;
   border-radius: 50%;
   background-color: $special-grey;
-  cursor: pointer;
+  color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-pink;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  .like-btn__input:checked ~ & {
+    background-color: $basic-pink;
+
+    &::before {
+      opacity: 1;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMyAx%0D%0AMSI+PHBhdGggZmlsbD0iI2YwMjMyMyIgZD0iTTEyIDFhMy4zMiAzLjMyIDAgMDAtNC43IDBsLS44%0D%0ALjctLjgtLjdBMy4zMiAzLjMyIDAgMDAxIDFDLS4zIDIuMy0uMyA0LjQgMSA1LjZsLjguOEw2LjUg%0D%0AMTFsNC43LTQuNi44LS44YzEuMy0xLjMgMS4zLTMuNCAwLTQuNnoiLz48L3N2Zz4=");
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $basic-pink;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 13px;
+    height: 11px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAx%0D%0ANyI+PHBhdGggZmlsbD0iIzE5MjE0NCIgZD0iTTE4LjUgMS41Yy0yLTItNS4zLTItNy4zIDBMMTAg%0D%0AMi43IDguOCAxLjVjLTItMi01LjMtMi03LjMgMHMtMiA1LjIgMCA3LjJsMS4yIDEuMkwxMCAxN2w3%0D%0ALjMtNy4yIDEuMi0xLjJjMi0xLjkgMi01LjEgMC03LjF6bS0zLjYgOC4zTDEwIDE0LjYgNS4xIDku%0D%0AOCAyLjcgNy41QzEuNCA2LjEgMS40IDQgMi43IDIuN2MxLjMtMS4zIDMuNS0xLjMgNC45IDBMMTAg%0D%0ANS4xbDIuNC0yLjRjMS4zLTEuMyAzLjUtMS4zIDQuOSAwIDEuMyAxLjMgMS4zIDMuNSAwIDQuOGwt%0D%0AMi40IDIuM3oiLz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
 }
 
-.like-btn__input-radio:checked + label::after {
-  background-color: $basic-pink;
-}
-
-.like-btn__input-radio + label::after {
-  content: "";
-  position: absolute;
-  left: 54px;
-  top: -26px;
-  width: 22px;
-  height: 11px;
-  background-image: url("../img/heart.svg");
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.like-btn__input-radio:checked + label::after {
-  content: "";
-  position: absolute;
-  left: 54px;
-  top: -26px;
-  width: 12px;
-  height: 11px;
-  background-image: url("../img/heart-active.svg");
-  background-repeat: no-repeat;
-  cursor: pointer;
+.like-btn__count {
+  @include font(bold, 14px, 21px);
+  margin-left: 7px;
 }
