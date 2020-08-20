@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  justify-content: center;
   @include font();
   font-family: "Blogger Sans", "Arial", sans-serif;
   margin: 0 auto;
