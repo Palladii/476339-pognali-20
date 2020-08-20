@@ -23,4 +23,8 @@
   background-color: inherit;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

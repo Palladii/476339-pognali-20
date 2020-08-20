@@ -15,6 +15,12 @@
   text-align: center;
   padding-top: 6px;
 
+  &--middle {
+    @include font(bold, 20px, 20px);
+    @include size(188px, 50px);
+    padding-top: 16px;
+  }
+
   &--small {
     @include size(190px, 40px);
     order: 3;

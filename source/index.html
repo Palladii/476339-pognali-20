@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Погнали - главная страница</title>
@@ -13,24 +14,19 @@
   <div class="container">
     <div class="header__wrapper">
       <a class="header__logo logo" href="index.html">
-        <svg width="96" height="15" viewBox="0 0 96 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
-          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="15">
-            <rect width="96" height="15" fill="url(#pattern0)"/>
-          </mask>
-          <g mask="url(#mask0)">
-            <rect width="96" height="15" fill="white"/>
-          </g>
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="scale(0.00787402 0.05)"/>
-            </pattern>
-            <image id="image0" width="127" height="20"
-                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAUCAYAAACkjuKKAAAFjUlEQVRoge2Ze4hXRRTHP6u59rAsy8xeaqFGZWmrpj3UwspCioge9iCyJ0GlkRWkPUgqsrAS/GMpwkijrDTL0h6Wm7U9rAxMqk17KoTS1oZbi7kbh74XhuHM3d9v9yqL7Rcu/H7nzpw5M2fmnO+cW9F3wPgW2o9hwJoC9HSi/TgKuBE4ExgAVAK/AR8CTwFLgGYbpUvnYu9SmA6sBW4CBsvxhl7ARGAR8BbQm07n71Iwx98PdG1lUqcDbwDdO52/a2AgcG9iJtsdWZVFh90SHc7PWZLZQP//4wp3YExyTvwG5f1fgJnAbdH7ySnnL86ZZ2qHpbAHcLTyTKOM2dBB17EC6AfsD2wGfuoANpWCI5w284D1+n234/xBOzLsjxazrAdWK8+slEE/A/eJiMR4UjeH1PMxcHvQ5zygRvpHJGyxsPgyUAtc47w3YjQN+BH4Xvba76+Bq7QpzgXeBZYBJ0b9h7dis/dMC/pPDHSflJjDOK2nzf9BoEfw7hOn/argdz/nfUvqqleRMABN4vhIFl71LPw8AkzJ0ZFhE3BxZOh7wNgS+o4HfgW+DIhrvVJSQ9Cui5w4MJCdrYU29AReA07JGcvanhGE1niccXJeOXhcazRYDD2Lwg3SXR/oOgt4PSLoNRrX/NcNmANcpmuchflZalelKHBMZNuqHXHy55boeMPBwJsysFz0AcZEC7KfszEPiRyPGG+Gea043jAhyqneOG3FqMDxhn0i3bZG852b2RhFV8M24AZgb23mWdowXymKxY43zCza+acB1zly2511KjbEME5QXea1c7V4SaXzLiY+3tUn6zdBacPDJnGUFFq7UpWKvChrYzwnDuLhyITcNvwr4loxLDJMBZYX7fxbHdk6VZ0GifTd7LQ5ATg5oXOjKlXZcxgwMscxQxUOs2dUjr1e/rcUMUQLaJxkRk7/PEyVYytkd1swQyc8hdQGtPXs7shXKFo8RhRuisB4R8dFwLf63azcNExEKoRdS953+v8D/FCGbbPLaOuF+wu0YQ1Nyp9DNI+diXHt2Hify/ZwAxhhfTVsVOTJt1OyeyTboLwTY6kj61ugLaWgq3hDiLrA8SEW7WTbLEIucAheqdioG0SNUuTVseMp+ORvdWS9NIHmSN7TabutQFtKwXaN2S1ou6/CdHwD6lGe6nahSSkjPAzLxIvyUkCMt3VzqkylyCJPfpNTFLHFnBzJuifyfl1BdnwgspM9S6NrU4g4nfRWtSyERbNbcsazNTxQxasQf7fR/sqAxaNTfIWzIfPQVYy/QYfSNsHhcfuic/5ix7FzdW9dqkW6w7kmtchRRWC6Jpuhvwo3HpY518CnJVsOHATcCRyb6L+nTtho5513sykFIfu3iHkpsKVMHVOiit5YFbmGh42KZvsPA39FMgurd+l78uLEQoWlyJ2JJ0QoQ1SqhF2rXB9X80JMSswH5dpSkHei7ykz12e40JFVxWVgc/6fUaMG8vGH8zbrs1HFhnKwVjkuQ6y/KUfX744sno/HRbI08J1OdluwVUUVD8uj7xeeDVlk+DSh4x3ggVZ0ePPH4ViuvIvqxCFmJjpmeCj6TPhCNNFngHP0YaQ1PA+cGk2iOjKyOkfHEm24DB8BX0RtNsvGDLZRnw3+P6pvBSnCuUXFoHAcq69/Bix0QrJVLC93bFgY2TBfv9c5PvgmKNVmWKmDkqFOY3lY4MhqY45jtX1U7hypDwQrEgpDHKf6+HqFRu+b8V7AldoIQ1USbdRHnRqF+thRGUbIpjU6RXnoo+8DjaqGeSekm0KhlUpfSnAAK0Jdr/x4gJxqi2t1A3OeyS4RkQvHOVS6bQ0staXCfWjDiw7ZtA86VnewyqLlZ4+h2y0p+3xrNqR4hfEGSxmW+y06Gbe5Vrr/A/Avocc+F49G4KEAAAAASUVORK5CYII="/>
-          </defs>
-        </svg>
-        <span class="visually-hidden">Логотип Погнали?</span>
+         <span class="visually-hidden">Логотип Погнали?</span>
       </a>
+      <ul class="header__menu site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link">О сервисе</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="form.html">Направления</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
       <button class="header__toggle" type="button">
         <svg width="25" height="11" viewBox="0 0 25 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="25" height="3" rx="1.5" fill="white"/>
@@ -38,6 +34,40 @@
         </svg>
         <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
+      <ul class="header__auth user-nav user-nav--off">
+        <li class="user-nav__item user-nav__item--off">
+          <a class="user-nav__link user-nav__tel" href="tel:8 800 555-86-28">
+            <div class="user-nav__svg-wrapper user-nav__svg-wrapper--orange user-nav__svg-wrapper--big">
+              <svg class="user-nav__icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z"
+                  fill="#161C35"/>
+                <path
+                  d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z"
+                  fill="#161C35"/>
+              </svg>
+            </div>
+            <span class="visually-hidden">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="user-nav__item user-nav__item--off">
+          <a class="user-nav__link user-nav__mail" href="mailto:mail@htmlacademy.ru">
+            <div class="user-nav__svg-wrapper user-nav__svg-wrapper--yellow user-nav__svg-wrapper--big">
+              <svg class="user-nav__icon" width="19" height="17" viewBox="0 0 19 17" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.0166 3.32528L8.7666 7.55572C8.9934 7.69747 9.2868 7.76467 9.582 7.76467C9.8772 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.9689C1.1616 1.97498 1.5774 3.04913 2.0166 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.8772 10.0757 9.582 10.0757C9.2868 10.0757 9.0726 10.0537 8.7666 9.86677C8.4606 9.67987 2.3469 5.94082 1.8474 5.63737C1.4964 5.42317 1.5 5.67412 1.5 5.86732V13.525C1.5 13.966 2.0094 14.575 2.4 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z"
+                  fill="#161C35"/>
+              </svg>
+            </div>
+            <span class="visually-hidden">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+        <li class="user-nav__item user-nav__item--off">
+          <a class="user-nav__btn user-nav__item--off button button--middle "href="#">Авторизация</a>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -56,9 +86,6 @@
           </li>
         </ul>
         <ul class="menu-nav__list user-nav">
-          <li class="user-nav__item">
-            <a class="button user-nav__link user-nav__btn js-login" href="#">Авторизация</a>
-          </li>
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__tel" href="tel:8 800 555-86-28">
               <div class="user-nav__svg-wrapper">
@@ -84,6 +111,9 @@
               </div>
               <span class="user-nav__text">mail@htmlacademy.ru</span>
             </a>
+          </li>
+          <li class="user-nav__item user-nav__item--first">
+            <a class="button user-nav__link user-nav__btn js-login" href="#">Авторизация</a>
           </li>
         </ul>
         <ul class="menu-nav__social social">
@@ -137,9 +167,6 @@
       <h1 class="main-nav__title">В путешествие с крутыми попутчиками!</h1>
       <nav>
         <ul class="main-nav__list user-nav user-nav--flex">
-          <li class="user-nav__item user-nav__item--last">
-            <a class="button button--small user-nav__link user-nav__btn user-nav__btn--small js-login" href="#">Авторизация</a>
-          </li>
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__tel" href="tel:8 800 555-86-28">
               <div class="user-nav__svg-wrapper user-nav__svg-wrapper--orange">
@@ -168,6 +195,9 @@
               </div>
               <span class="visually-hidden">mail@htmlacademy.ru</span>
             </a>
+          </li>
+          <li class="user-nav__item user-nav__item--last">
+            <a class="button button--small user-nav__link user-nav__btn user-nav__btn--small js-login" href="#">Авторизация</a>
           </li>
         </ul>
       </nav>

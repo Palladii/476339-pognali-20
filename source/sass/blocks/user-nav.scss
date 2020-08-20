@@ -1,6 +1,19 @@
 .user-nav {
+  position: relative;
   @include font(bold, 16px, 18px);
   @include ul();
+
+  &--off {
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
 
   &--flex {
     display: flex;
@@ -20,22 +33,30 @@
 .user-nav__item {
   position: relative;
   margin-bottom: 27px;
+  display: none;
 
-  &--last {
-    order: 3;
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--first {
+    order: 1;
     margin-left: 88px;
   }
 }
 
+
 .user-nav__svg-wrapper {
-  position: absolute;
-  left: 0;
-  top: -10px;
   background-color: $special-dark-blue;
-  padding: 14px 13.5px;
+  padding: 14px;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  @include size(45px, 45px);
 
   &--orange {
     background-color: $special-orange;
@@ -47,6 +68,11 @@
     background-color: $special-yellow;
     left: 44px;
     top: -1px;
+  }
+
+  &--big {
+    @include size(50px, 50px);
+    padding: 16px;
   }
 }
 

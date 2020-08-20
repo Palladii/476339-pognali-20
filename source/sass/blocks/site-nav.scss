@@ -1,12 +1,19 @@
 .site-nav {
+  display: none;
   @include ul();
-  @include font(500, 30px, 35px);
+  @include font(500, 20px, 20px);
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 51px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    margin: 18px 160px 0 0;
+  }
 }
 
 .site-nav__link {
   text-decoration: none;
-  color: $basic-dark-blue;
+  color: $basic-white;
 }

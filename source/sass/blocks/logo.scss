@@ -1,7 +1,18 @@
 .logo {
   @include size(96px, 15px);
-}
+  background-image: url("../img/logo-mobile-white@1x.png");
+  background-repeat: no-repeat;
 
-.logo__img {
-  margin: 37px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    @include size(166px, 42px);
+    background-image: url("../img/logo-tablet-white@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(200px, 52px);
+    background-image: url("../img/logo-desktop-white@1x.png");
+    background-repeat: no-repeat;
+  }
 }
