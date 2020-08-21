@@ -1,18 +1,14 @@
 .user-nav {
-  position: relative;
+  position: absolute;
   @include font(bold, 16px, 18px);
   @include ul();
+  display: flex;
+  top: 450px;
+  z-index: 2;
 
-  &--off {
-    position: absolute;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-    }
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
   }
 
   &--flex {
@@ -33,14 +29,15 @@
 .user-nav__item {
   position: relative;
   margin-bottom: 27px;
-  display: none;
 
   @media (min-width: $tablet-width) {
-    &:last-child {
-      display: block;
+    &:not(:last-child) {
+      display: none;
     }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
       display: block;
     }
   }
@@ -50,7 +47,6 @@
     margin-left: 88px;
   }
 }
-
 
 .user-nav__svg-wrapper {
   background-color: $special-dark-blue;
