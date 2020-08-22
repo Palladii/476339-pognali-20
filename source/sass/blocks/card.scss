@@ -3,6 +3,17 @@
   border-radius: 10px;
   margin-bottom: 9px;
   background-color: $basic-white;
+  width: 100%;
+
+  &:first-child {
+    margin-right: 50px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    margin-bottom: 81px;
+  }
 }
 
 .card__avatar-wrapper {
@@ -14,6 +25,7 @@
 .card__avatar {
   position: relative;
   border-radius: 10px 10px 0 0;
+  width: 100%;
 
   &--round {
     border-radius: 50%;
@@ -23,18 +35,17 @@
 .card__name-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 168px;
   margin: 0;
 
   &--center {
     margin: 30px auto 15px;
-    width: 148px;
   }
 }
 
 .card__name {
   @include font(bold, 24px, 24px);
-  color: $color-title--orange;
+  color: $color-text--blue;
   border-radius: 50%;
 
   &--center {
@@ -46,7 +57,7 @@
   @include size(6px, 6px);
   border-radius: 50%;
   background-color: $extra-orange;
-  margin-top: 10px;
+  margin-top: 35px;
 
   &--active {
     background-color: $basic-green;
@@ -128,7 +139,7 @@
 .card__country {
   @include font(500, 15px, 16px);
   text-transform: uppercase;
-  color: $basic-special-blue;
+  color: $color-text--blue;
   margin-left: 30px;
 }
 
@@ -182,7 +193,7 @@
     left: 5px;
 
     & .card__level-count {
-      color: $basic-special-blue;
+      color: $color-text--blue;
     }
 
     & .card__level-text {
@@ -254,7 +265,7 @@
 
 .cards__btn {
   @include font(bold, 18px, 18px);
-  color: $basic-special-blue;
+  color: $color-text--blue;
   text-transform: none;
   text-align: left;
   padding: 15px 0 0 24px;

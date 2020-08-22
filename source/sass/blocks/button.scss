@@ -14,15 +14,17 @@
   &--rectangle {
     @include size(100%, 62px);
     @include font(bold, 18px, 18px);
-    color: $basic-special-blue;
+    color: $color-text--blue;
     text-transform: none;
     border-radius: 10px;
     padding: 22px 0 0 23px;
 
     @media (min-width: $tablet-width) {
       @include font(bold, 24px, 24px);
+      @include size(616px, 80px);
       height: 80px;
       padding-top: 28px;
+      border-radius: 10px;
     }
 
     @media (min-width: $desktop-width) {

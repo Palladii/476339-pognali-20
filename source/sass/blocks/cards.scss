@@ -1,4 +1,5 @@
 .cards {
+  position: relative;
   background-color: $basic-light-blue;
 }
 
@@ -7,7 +8,7 @@
   position: relative;
   @include font(bold, 17px, 30px);
   text-decoration: none;
-  color: $basic-special-blue;
+  color: $color-text--blue;
   text-transform: uppercase;
   margin: 18px 0 28px 80px;
 
@@ -18,5 +19,19 @@
     background-image: url("../img/show-more-plus.svg");
     top: 5px;
     left: -30px;
+  }
+}
+
+.cards__btn {
+  margin-bottom: 40px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 620px;
   }
 }
