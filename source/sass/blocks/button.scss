@@ -1,8 +1,5 @@
 .button {
-  position: relative;
-  @include font(bold, 17px, 30px);
   @include a();
-  @include size(270px, 50px);
   display: inline-block;
   vertical-align: middle;
   padding: 0;
@@ -12,17 +9,40 @@
   color: $color-bg--dark-blue;
   background-color: $basic-yellow;
   border-radius: 25px;
-  text-align: center;
-  padding-top: 6px;
 
-  &--middle {
-    @include font(bold, 20px, 20px);
-    @include size(188px, 50px);
-    padding-top: 16px;
+
+  &--rectangle {
+    @include size(100%, 62px);
+    @include font(bold, 18px, 18px);
+    color: $basic-special-blue;
+    text-transform: none;
+    border-radius: 10px;
+    padding: 22px 0 0 23px;
+
+    @media (min-width: $tablet-width) {
+      @include font(bold, 24px, 24px);
+      height: 80px;
+      padding-top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 274px;
+      padding-top: 28px;
+    }
   }
 
-  &--small {
+  &--ellipse {
+    position: relative;
     @include size(190px, 40px);
-    order: 3;
+    @include font(bold, 17px, 20px);
+    text-align: center;
+    padding-top: 12px;
+
+    @media (min-width: $tablet-width) {
+      @include font(bold, 20px, 20px);
+      @include size(188px, 50px);
+      padding-top: 16px;
+    }
   }
 }
+
