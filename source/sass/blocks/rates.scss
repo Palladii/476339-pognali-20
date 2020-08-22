@@ -20,7 +20,7 @@
 
 .rates__title {
   @include font(bold, 24px, 24px);
-  color: $special_orange;
+  color: $color-title--orange;
   width: 107px;
   padding-top: 64px;
   margin-bottom: 56px;
