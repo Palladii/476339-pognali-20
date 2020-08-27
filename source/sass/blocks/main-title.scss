@@ -1,7 +1,13 @@
 .main-title {
   background-color: $color-bg--blue;
   border-radius: 0 0 30px 30px;
+  margin-top: -2px;
+  padding: 9px 0;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 0;
+  }
 }
 
 .main-title__title {
@@ -14,10 +20,20 @@
   &::after {
     position: absolute;
     content: "";
-    @include size(173px, 5px);
+    @include size(214px, 4px);
     background-color: $color-title--orange;
     border-radius: 4px;
-    top: 44px;
+    top: 55px;
     left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-size(60px, 60px);
+
+    &::after {
+      @include size(354px, 4px);
+      top: 137px;
+      left: 0;
+    }
   }
 }

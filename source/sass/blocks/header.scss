@@ -1,12 +1,20 @@
 .header {
   background-color: $color-bg--dark-blue;
 
+  &--light {
+    background-color: $color-bg--blue;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $color-bg--blue;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $color-bg--dark-blue;
+
+    &--light {
+      background-color: $color-bg--blue;
+    }
   }
 }
 
