@@ -4,8 +4,17 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 25px;
+  }
 }
 
 .copyright__link {
   @include size(30px, 40px);
+
+  @media (min-width: $tablet-width) {
+    margin: -5px 0 0 23px;
+  }
 }
