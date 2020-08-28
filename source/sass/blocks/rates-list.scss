@@ -40,7 +40,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 0px;
+      top: 0;
       left: 1000px;
     }
   }
@@ -90,8 +90,6 @@
 }
 
 .rates-list__cost {
-
-
   @media (min-width: $tablet-width) {
     margin-right: 36px;
   }
@@ -100,4 +98,3 @@
     margin-right: 350px;
   }
 }
-

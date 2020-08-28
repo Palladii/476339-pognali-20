@@ -76,13 +76,14 @@
   color: $color-text--blue;
   margin: 35px 0 0 29px;
 
+
   &--carent {
-      @include size(50px, 50px);
-      background-color: $basic-yellow;
-      border-radius: 50%;
-      top: 0;
-    }
+    @include size(50px, 50px);
+    background-color: $basic-yellow;
+    border-radius: 50%;
+    top: 0;
   }
+}
 
 .pagination__link {
   @include a();
