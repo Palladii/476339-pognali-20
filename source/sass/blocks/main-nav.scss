@@ -1,0 +1,17 @@
+.main-nav {
+  background-color: $basic-blue;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 52% 138px, 50% -143px;
+  background-size: auto;
+  text-align: center;
+  min-height: 384px;
+}
+
+.main-nav__title {
+  @include font(bold, 36px, 40px);
+  @include size(238px, 100%);
+  color: $basic-white;
+  margin: 0 auto;
+  margin-bottom: 285px;
+}

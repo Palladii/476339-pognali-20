@@ -1,0 +1,60 @@
+.sequencing {
+  background-color: $basic-medium-blue;
+}
+
+.sequencing-numbered li::after {
+  position: relative;
+  top: 22px;
+  right: 21px;
+  color: $basic-white;
+  counter-increment: li;
+  content: counters(li, ".");
+}
+
+.sequencing__list {
+  position: relative;
+  list-style: none;
+  counter-reset: li;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  top: -60px;
+}
+
+.sequencing__item {
+  @include font(bold, 18px, 18px);
+  display: flex;
+  justify-content: space-between;
+  color: $basic-blue;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-top: -20px;
+  min-height: 80px;
+  background-color: $special-orange;
+
+  &:nth-child(2) {
+    background-color: $special-light-orange;
+  }
+
+  &:nth-child(3) {
+    background-color: $special-yellow;
+  }
+
+  &:nth-child(4) {
+    background-color: $basic-yellow;
+  }
+}
+
+.sequencing__text {
+  display: inline-block;
+  @include size(150px, 100%);
+  margin-left: 24px;
+  padding-top: 14px;
+}
+
+.sequencing__number {
+  position: relative;
+  top: 15px;
+  margin-right: 19px;
+  color: $basic-white;
+}

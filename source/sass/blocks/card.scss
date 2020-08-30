@@ -1,0 +1,272 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 9px;
+  background-color: $basic-white;
+}
+
+.card__avatar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.card__avatar {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+
+  &--round {
+    border-radius: 50%;
+  }
+}
+
+.card__name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin: 0;
+
+  &--center {
+    margin: 30px auto 15px;
+    width: 148px;
+  }
+}
+
+.card__name {
+  @include font(bold, 24px, 24px);
+  color: $special_orange;
+  border-radius: 50%;
+
+  &--center {
+    order: 2;
+  }
+}
+
+.card__status {
+  @include size(6px, 6px);
+  border-radius: 50%;
+  background-color: $extra-orange;
+  margin-top: 10px;
+
+  &--active {
+    background-color: $basic-green;
+  }
+}
+
+.card__hash-tag {
+  width: 200px;
+  margin-bottom: 14px;
+
+  &--center {
+    margin: 0 auto 14px;
+    text-align: center;
+  }
+}
+
+.card__subtitle {
+  position: relative;
+  @include font(normal, 15px, 16px);
+  color: $basic-grey;
+  background-color: $basic-white;
+  padding: 0 10px;
+  z-index: 3;
+
+  &--country {
+    width: 130px;
+  }
+
+  &--transport {
+    width: 90px;
+  }
+
+  &--level {
+    width: 55px;
+  }
+}
+
+.card__list {
+  position: relative;
+  @include ul();
+  border-top: 1px solid $extra-light-grey;
+  border-bottom: 1px solid $extra-light-grey;
+  width: 270px;
+  left: -20px;
+  padding: 31px 25px 25px;
+
+  &--line {
+    position: absolute;
+    content: "";
+    @include size(148px, 35px);
+    display: flex;
+    justify-content: space-between;
+    top: 255px;
+    left: 72px;
+    padding: 0;
+    border: none;
+  }
+
+  &--two-flags {
+    @include size(80px, 35px);
+    margin-left: 20px;
+  }
+}
+
+.card__list--column {
+  position: relative;
+  top: -28px;
+  z-index: 2;
+}
+
+.card__item {
+  margin-bottom: 10px;
+}
+
+.card__flag {
+  border-radius: 1px;
+}
+
+.card__country {
+  @include font(500, 15px, 16px);
+  text-transform: uppercase;
+  color: $basic-special-blue;
+  margin-left: 30px;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -58px;
+}
+
+.transport-list {
+  @include ul();
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.card__transport-title {
+  display: none;
+}
+
+.card__level {
+  position: absolute;
+  z-index: 1;
+  @include size(60px, 60px);
+  @include font(bold, 24px, 24px);
+  padding-top: 6px;
+  border-radius: 50%;
+  text-align: center;
+  top: 17px;
+  left: 17px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &--small {
+    position: relative;
+    @include size(45px, 45px);
+    padding: 10px;
+    top: -15px;
+    left: 5px;
+
+    & .card__level-count {
+      color: $basic-special-blue;
+    }
+
+    & .card__level-text {
+      display: none;
+    }
+  }
+
+  &--inverse {
+    background-color: $opacity-black;
+
+    & .card__level-count {
+      color: $basic-white;
+    }
+
+    & .card__level-text {
+      @include font(normal, 14px, 14px);
+      border-top: 1px solid $opacity-white;
+      color: $basic-white;
+    }
+  }
+
+  &--25::before {
+    border: 3px solid #ff8d30;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: rotate(45deg);
+  }
+
+  &--50::before {
+    border: 3px solid #ff8d30;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: rotate(45deg);
+  }
+
+  &--80::before {
+    border: 3px solid $special-orange;
+    border-left: 3px solid transparent;
+    transform: rotate(45deg);
+  }
+
+  &--80::after {
+    border: 3px solid $special-orange;
+    border-left: 3px solid transparent;
+    transform: rotate(75deg);
+  }
+
+  &--99::before {
+    border: 3px solid #ff8d30;
+    border-left: 3px solid transparent;
+    transform: rotate(45deg);
+  }
+
+  &--99::after {
+    border: 3px solid #ff8d30;
+    border-left: 3px solid transparent;
+    transform: rotate(125deg);
+  }
+}
+
+
+.card__btn {
+  @include size(230px, 40px);
+  line-height: 17px;
+  padding-top: 14px;
+  margin-bottom: 22px;
+}
+
+.cards__btn {
+  @include font(bold, 18px, 18px);
+  color: $basic-special-blue;
+  text-transform: none;
+  text-align: left;
+  padding: 15px 0 0 24px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.card__container {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.card__likes {
+  position: relative;
+}

@@ -1,0 +1,11 @@
+.copyright {
+  @include font(normal, 16px, 16px);
+  color: $basic-grey;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.copyright__link {
+  @include size(30px, 40px);
+}
