@@ -241,7 +241,7 @@
             <div class="form-plans__wrapper">
               <div class="form-plans__label-wrapper">
                 <label class="form-plans__label" for="duration">длительность:</label>
-                <span class="form__measure">дн.</span>
+                <span class="form-plans__measure">дн.</span>
               </div>
               <div class="form-plans__controls">
                 <button class="form-plans__control-menus" aria-label="Уменьшить количество дней"
@@ -258,11 +258,9 @@
             </div>
 
             <table class="form-plans__calendar calendar">
-              <div class="calendar-wrapper">
-                <button class="calendar-last-mounth" aria-label="Предыдущий месяц"></button>
-                <caption class="calendar__mounths">Март 2019</caption>
-                <button class="calendar-next-mounth" aria-label="Следующий месяц"></button>
-              </div>
+              <button class="calendar__last-mounth" aria-label="Предыдущий месяц"></button>
+              <button class="calendar__next-mounth" aria-label="Следующий месяц"></button>
+              <caption class="calendar__mounths">Март 2019</caption>
               <thead class="calendar__days">
               <tr class="calendar__rows">
                 <th class="calendar__day-name">П</th>
@@ -274,60 +272,60 @@
                 <th class="calendar__day-name calendar__day-name--red">В</th>
               </tr>
               </thead>
-              <tbody>
+              <tbody class="calendar__dates">
               <tr class="calendar__rows">
-                <td class="calendar__columns">23</td>
-                <td class="calendar__columns">24</td>
-                <td class="calendar__columns">25</td>
-                <td class="calendar__columns">26</td>
-                <td class="calendar__columns">27</td>
-                <td class="calendar__columns">28</td>
-                <td class="calendar__columns">1</td>
+                <td class="calendar__date">23</td>
+                <td class="calendar__date">24</td>
+                <td class="calendar__date">25</td>
+                <td class="calendar__date">26</td>
+                <td class="calendar__date">27</td>
+                <td class="calendar__date">28</td>
+                <td class="calendar__date">1</td>
               </tr>
               <tr class="calendar__rows">
-                <td class="calendar__columns">2</td>
-                <td class="calendar__columns">3</td>
-                <td class="calendar__columns">4</td>
-                <td class="calendar__columns">5</td>
-                <td class="calendar__columns">6</td>
-                <td class="calendar__columns">7</td>
-                <td class="calendar__columns">8</td>
+                <td class="calendar__date">2</td>
+                <td class="calendar__date">3</td>
+                <td class="calendar__date">4</td>
+                <td class="calendar__date">5</td>
+                <td class="calendar__date">6</td>
+                <td class="calendar__date">7</td>
+                <td class="calendar__date">8</td>
               </tr>
               <tr class="calendar__rows">
-                <td class="calendar__columns">9</td>
-                <td class="calendar__columns">10</td>
-                <td class="calendar__columns">11</td>
-                <td class="calendar__columns">12</td>
-                <td class="calendar__columns">13</td>
-                <td class="calendar__columns">14</td>
-                <td class="calendar__columns">15</td>
+                <td class="calendar__date">9</td>
+                <td class="calendar__date">10</td>
+                <td class="calendar__date">11</td>
+                <td class="calendar__date">12</td>
+                <td class="calendar__date">13</td>
+                <td class="calendar__date">14</td>
+                <td class="calendar__date">15</td>
               </tr>
               <tr class="calendar__rows">
-                <td class="calendar__columns">16</td>
-                <td class="calendar__columns">17</td>
-                <td class="calendar__columns">18</td>
-                <td class="calendar__columns">19</td>
-                <td class="calendar__columns">20</td>
-                <td class="calendar__columns">21</td>
-                <td class="calendar__columns">22</td>
+                <td class="calendar__date">16</td>
+                <td class="calendar__date">17</td>
+                <td class="calendar__date">18</td>
+                <td class="calendar__date">19</td>
+                <td class="calendar__date">20</td>
+                <td class="calendar__date">21</td>
+                <td class="calendar__date">22</td>
               </tr>
               <tr class="calendar__rows">
-                <td class="calendar__columns">23</td>
-                <td class="calendar__columns">24</td>
-                <td class="calendar__columns">25</td>
-                <td class="calendar__columns calendar__columns--active">26</td>
-                <td class="calendar__columns calendar__columns--active">27</td>
-                <td class="calendar__columns calendar__columns--active">28</td>
-                <td class="calendar__columns calendar__columns--active">29</td>
+                <td class="calendar__date">23</td>
+                <td class="calendar__date">24</td>
+                <td class="calendar__date">25</td>
+                <td class="calendar__date calendar__date--active">26</td>
+                <td class="calendar__date calendar__date--active">27</td>
+                <td class="calendar__date calendar__date--active">28</td>
+                <td class="calendar__date calendar__date--active">29</td>
               </tr>
               <tr class="calendar__rows calendar__rows--active">
-                <td class="calendar__columns">30</td>
-                <td class="calendar__columns">31</td>
-                <td class="calendar__columns">1</td>
-                <td class="calendar__columns">2</td>
-                <td class="calendar__columns">3</td>
-                <td class="calendar__columns">4</td>
-                <td class="calendar__columns">5</td>
+                <td class="calendar__date">30</td>
+                <td class="calendar__date">31</td>
+                <td class="calendar__date">1</td>
+                <td class="calendar__date">2</td>
+                <td class="calendar__date">3</td>
+                <td class="calendar__date">4</td>
+                <td class="calendar__date">5</td>
               </tr>
               </tbody>
             </table>
@@ -339,11 +337,11 @@
           <div class="container container--narrow">
             <div class="form-plans__wrapper">
               <div class="form-plans__legend-wrapper">
-                <legend class="plans__legend">Шаг 2. Маршрут</legend>
-                <p class="plans__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу
+                <legend class="form-plans__legend">Шаг 2. Маршрут</legend>
+                <p class="form-plans__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу
                   несколько.</p>
               </div>
-              <ul class="form-plans__list plans-list">
+              <ul class="form-plans__list">
                 <li class="form-plans-list__item">даты</li>
                 <li class="form-plans-list__item">маршрут</li>
                 <li class="form-plans-list__item">развлечения</li>
@@ -355,40 +353,36 @@
                        placeholder="Босния и Герцеговина" readonly>
                 <button class="form-plans__add" type="button" aria-label="Добавить страну/закрыть поиск"></button>
                 <span class="form-plans__select" aria-label="Выбрано или не выбрано"></span>
-                <img class="form-plans__country-flag" src="placeholder.jpeg" width="35" height="24"
+                <img class="form-plans__flag" src="img/flag-bosnia.svg" width="35" height="24"
                      aria-label="Флаг Боснии и Герцеговины">
-                <button class="form-plans__delete" type="button" aria-label="Удалить"></button>
+                <button class="form-plans__delete button" type="button" aria-label="Удалить"></button>
               </div>
               <div class="form-plans__countries">
                 <input class="form-plans__country" type="text" id="country-2" name="country" placeholder="Чехия"
                        readonly>
                 <button class="form-plans__add" type="button" aria-label="Добавить страну/закрыть поиск"></button>
                 <span class="form-plans__select" aria-label="Выбрано или не выбрано"></span>
-                <img class="form-plans__country-flag" src="placeholder.jpeg" width="35" height="24"
+                <img class="form-plans__flag" src="img/flag-czech.svg" width="35" height="24"
                      aria-label="Флаг Чехии">
-                <button class="form-plans__delete" type="button" aria-label="Удалить"></button>
+                <button class="form-plans__delete button" type="button" aria-label="Удалить"></button>
               </div>
               <div class="form-plans__countries">
-                <input class="form-plans__country" type="text" id="country-choose" name="country"
+                <input class="form-plans__country form-plans__country--longer" type="text" id="country-choose" name="country"
                        placeholder="Выберите страну" readonly>
-                <button class="form-plans__add" type="button" aria-label="Добавить страну/закрыть поиск"></button>
+                <button class="form-plans__add form-plans__add" type="button" aria-label="Добавить страну/закрыть поиск"></button>
                 <span class="form-plans__select" aria-label="Выбрано или не выбрано"></span>
-                <img class="form-plans__country-flag form-plans__country-flag--active" src="placeholder.jpeg" width="16"
-                     height="12" aria-label="Выберите страну">
-                <button class="form-plans__delete" type="button" aria-label="Удалить"></button>
+                <button class="form-plans__delete button" type="button" aria-label="Удалить"></button>
               </div>
               <div class="form-plans__countries">
-                <input class="form-plans__country" type="text" id="country-add" name="country"
-                       placeholder="Добавить страну"
-                       readonly>
-                <button class="form-plans__add" type="button" aria-label="Добавить страну/закрыть"></button>
+                <input class="form-plans__country form-plans__country--longer form-plans__country--blue" type="text" id="country-add" name="country"
+                       placeholder="Добавить страну" readonly>
+                <button class="form-plans__add form-plans__add" type="button" aria-label="Добавить страну/закрыть"></button>
                 <span class="form-plans__select" aria-label="Выбрано или не выбрано"></span>
               </div>
             </div>
 
             <section class="form-plans__countries-choose choose">
               <div class="choose__wrapper">
-                <h4 class="choose__add-country">Выберите страну</h4>
                 <button class="choose__delete" type="button" aria-label="Удалить"></button>
               </div>
               <table class="choose__table alphabet">
@@ -512,8 +506,10 @@
                 </li>
               </ul>
             </section>
+            <div class="form-plans__button-wrapper">
             <a class="form-plans__next button" href="#step-3">Следующий шаг</a>
             <a class="form-plans__back" href="#step-1">На шаг назад</a>
+            </div>
           </div>
         </fieldset>
 
@@ -535,15 +531,17 @@
             <div class="form-plans__action-list">
               <div class="form-plans__action-item">
                 <label class="form-plans__action-title">Босния и Герцеговина</label>
-                <textarea class="plans__action-plan" name="action-plan" placeholder="План действий"></textarea>
+                <textarea class="form-plans__action-plan form-plans__action-plan--opacity" name="action-plan" placeholder="План действий"></textarea>
               </div>
               <div class="form-plans__action-item">
                 <label class="form-plans__action-title">Чехия</label>
                 <textarea class="form-plans__action-plan" name="action-plan">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
             </div>
+            <div class="form-plans__button-wrapper">
             <button class="form-plans__btn button" type="submit">Отправить</button>
             <a class="form-plans__back" href="form.html#step-2">На шаг назад</a>
+            </div>
           </div>
         </fieldset>
       </form>

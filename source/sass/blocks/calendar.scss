@@ -1,0 +1,35 @@
+.calendar {
+  position: relative;
+  width: 100%;
+}
+
+.calendar__last-mounth {
+position: absolute;
+  @include size(20px, 43px);
+  background-color: $basic-white;
+  border: none;
+  top: 613px;
+  left: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__next-mounth {
+  position: absolute;
+  @include size(20px, 43px);
+  background-color: $basic-white;
+  border: none;
+  top: 613px;
+  left: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__mounths {
+  @include font(bold, 20px, 20px);
+  border-top: 1px solid $color-border--grey-darker;
+  border-bottom: 1px solid $color-border--grey-darker;
+  padding: 12px 0 11px;
+  margin-bottom: 22px;
+}
+
