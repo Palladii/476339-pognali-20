@@ -1,0 +1,19 @@
+.filters {
+  background-color: $extra-light-grey;
+  color: $basic-special-blue;
+  padding-top: 21px;
+}
+
+.filters__wrapper {
+  background-color: $basic-yellow;
+  border-radius: 20px;
+}
+
+.filters__title {
+  @include font(bold, 22px, 22px);
+  width: 145px;
+  letter-spacing: 0.02em;
+  padding: 26px 0 0 25px;
+  margin-bottom: 35px;
+}
+
