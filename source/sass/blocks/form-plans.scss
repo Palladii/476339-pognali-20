@@ -3,6 +3,7 @@
 }
 
 .form-plans__fieldset {
+  position: relative;
   background-color: $basic-white;
   border-radius: 10px;
   border: none;
@@ -22,6 +23,16 @@
 
 .form-plans__list {
   display: none;
+}
+
+.form-plans__choose {
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid $color-border--grey;
+  box-shadow: 0 2px 16px $color-shadow;
+  background-color: $basic-white;
+  z-index: 5;
+  top: 401px;
 }
 
 .form-plans__label-wrapper {

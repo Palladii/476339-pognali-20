@@ -1,14 +1,14 @@
 .main-title__wrapper {
   background-color: $blue-original;
-  border-radius: 0 0 30px 30px;
 }
 
 .main-title__wrapper-title {
-  background-color: $blue-original;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 2;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
 }
 
 .main-title__title {
