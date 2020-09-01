@@ -12,13 +12,9 @@
 }
 
 .main-title__title {
-  background-color: $blue-original;
   position: relative;
-  @include font(bold, 36px, 36px);
-  color: $basic-white;
-  margin: 0;
-  padding: 0 0 11px 0;
-  z-index: 2;
+  background-color: $blue-original;
+
 
   &::after {
     position: absolute;
@@ -29,4 +25,18 @@
     top: 44px;
     left: 0;
   }
+}
+
+.main-title__wrapper {
+  background-color: $blue-original;
+  border-radius: 0 0 30px 30px;
+  margin-top: -2px;
+  padding: 9px 0;
+  z-index: 2;
+  @include font(bold, 30px, 36px);
+  color: $basic-white;
+}
+
+.main-title__link {
+  display: none;
 }
