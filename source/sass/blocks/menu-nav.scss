@@ -1,5 +1,8 @@
 .menu-nav {
   display: none;
+  position: absolute;
   background-color: $basic-white;
   padding-top: 24px;
+  width: 320px;
+  z-index: 5;
 }

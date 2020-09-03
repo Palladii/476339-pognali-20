@@ -53,4 +53,14 @@
 .user-nav__text {
   margin-left: 61px;
   text-transform: uppercase;
+
+  &--yellow {
+    margin-left: 0;
+    font-size: 18px;
+    color: $basic-yellow;
+  }
+}
+
+.user-nav__tel-img {
+  @include size(90px, 90px);
 }

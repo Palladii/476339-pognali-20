@@ -1,0 +1,208 @@
+.form-plans {
+  color: $basic-special-blue;
+}
+
+.form-plans__fieldset {
+  position: relative;
+  background-color: $basic-white;
+  border-radius: 10px;
+  border: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.form-plans__legend {
+  @include font(bold, 20px, 20px);
+  padding-top: 24px;
+  margin-bottom: 16px;
+}
+
+.form-plans__text {
+  color: $basic-grey;
+}
+
+.form-plans__list {
+  display: none;
+}
+
+.form-plans__choose {
+  display: none;
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid $color-border--grey;
+  box-shadow: 0 2px 16px $color-shadow;
+  background-color: $basic-white;
+  z-index: 5;
+  top: 401px;
+}
+
+.form-plans__label-wrapper {
+  @include font(500, 16px, 16px);
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.form-plans__measure {
+  color: $basic-special-blue;
+}
+
+.form-plans__controls {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $color-border--grey-darker;
+  border-radius: 3px;
+  margin-bottom: 21px;
+  z-index: 5;
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
+}
+
+.form-plans__control-menus {
+  @include size(43px, 43px);
+  background-color: $basic-white;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-plans__control-plus {
+  @include size(43px, 43px);
+  background-color: $basic-white;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-plans__control {
+  @include font-size(15px, 14px);
+  @include size(134px, 43px);
+  background-color: $basic-white;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.form-plans__wrapper {
+  padding-bottom: 21px;
+}
+
+.form-plans__next {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.form-plans__countries {
+  position: relative;
+}
+
+.form-plans__country {
+  @include size(163px, 42px);
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid $color-border--grey;
+  border-radius: 5px;
+  margin-bottom: 12px;
+
+  &::placeholder {
+    @include font(500, 14px, 18px);
+    color: $basic-special-blue;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+
+  &--longer {
+    width: 100%;
+  }
+
+  &--blue {
+    background-color: $basic-light-blue;
+    border: none;
+  }
+}
+
+.form-plans__add {
+  display: none;
+  position: absolute;
+  @include size(30px, 40px);
+  border: none;
+  background-color: transparent;
+  top: 5px;
+  left: 136px;
+}
+
+.form-plans__select {
+  position: absolute;
+  @include size(8px, 8px);
+  border-radius: 50%;
+  background-color: blue;
+  top: 28px;
+  left: 163px;
+}
+
+.form-plans__flag {
+  position: relative;
+  @include size(53px, 42px);
+  border: 1px solid $color-border--grey;
+  border-radius: 5px;
+  padding: 9px;
+  top: 16px;
+}
+
+.form-plans__delete {
+  position: absolute;
+  @include size(21px, 21px);
+  border-radius: 50%;
+  background-color: $color-button--grey;
+  top: 5px;
+  left: 205px;
+}
+
+.form-plans__back {
+  @include font(bold, 17px, 30px);
+  @include a();
+  width: 119px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  color: $basic-special-blue;
+}
+
+.form-plans__button-wrapper {
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.form-plans__action-title {
+  @include font(bold, 18px, 18px);
+}
+
+.form-plans__action-plan {
+  @include size(100%, 220px);
+  @include font();
+  font-family: inherit;
+  color: $basic-grey;
+  outline: none;
+  resize: none;
+  padding: 11px 17px 14px;
+  border: 1px solid $color-border--grey;
+  border-radius: 5px;
+  margin: 18px 0 27px;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.form-plans__btn {
+  @include font(bold, 18px, 18px);
+  width: 100%;
+  margin-bottom: 17px;
+}

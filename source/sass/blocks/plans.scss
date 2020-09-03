@@ -1,0 +1,51 @@
+.plans {
+  position: relative;
+  @include font(500, 14px, 14px);
+  background-color: $color-button--grey;
+  color: $basic-special-blue;
+  border-radius: 20px;
+  top: -20px;
+  z-index: 1;
+}
+
+.plans__title {
+  @include font(bold, 24px, 24px);
+  padding-top: 28px;
+  margin: 0 0 29px;
+}
+
+.plans__country-list {
+  @include ul();
+  padding-bottom: 23px;
+}
+
+.plans__country-item {
+  background-color: $basic-white;
+  border-radius: 10px;
+  padding-bottom: 23px;
+  margin-bottom: 10px;
+}
+
+.plans__country {
+  @include font(bold, 16px, 16px);
+  margin: 0;
+  padding: 24px 0 0 23px;
+}
+
+.plans__travelers {
+  padding-left: 25px;
+  margin: 0 0 5px;
+}
+
+.plans__dates {
+  padding-left: 25px;
+  margin: 0 0 24px;
+}
+
+.plans__link {
+  @include a();
+  color: $basic-black;
+  opacity: 0.3;
+  padding: 0 0 23px 25px;
+  padding-bottom: 40px;
+}
