@@ -12,10 +12,8 @@
 
 .main-title__title {
   position: relative;
-  @include font(bold, 36px, 36px);
-  color: $basic-white;
-  margin: 0;
-  padding: 0 0 11px 0;
+  background-color: $blue-original;
+
 
   &::after {
     position: absolute;
@@ -57,4 +55,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.main-title__wrapper {
+  background-color: $blue-original;
+  border-radius: 0 0 30px 30px;
+  margin-top: -2px;
+  padding: 9px 0;
+  z-index: 2;
+  @include font(bold, 30px, 36px);
+  color: $basic-white;
+}
+
+.main-title__link {
+  display: none;
 }

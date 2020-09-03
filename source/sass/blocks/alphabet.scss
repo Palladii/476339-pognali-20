@@ -1,0 +1,36 @@
+.alphabet {
+  width: 220px;
+  border-spacing: 0;
+}
+
+.alphabet__table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.alphabet__columns {
+  @include size(43px, 41px);
+  text-align: center;
+  border: 1px solid $color-border--grey;
+  background-color: $basic-white;
+
+  &--active {
+    background-color: $basic-light-blue;
+  }
+
+  &--active-dark {
+    background-color: $basic-special-blue;
+    color: $basic-white;
+  }
+}
+
+.alphabet__link {
+@include a();
+  @include font(500, 14px, 18px);
+  color: $basic-special-blue;
+  text-transform: uppercase;
+
+  &--active-dark {
+    color: $basic-white;
+  }
+}

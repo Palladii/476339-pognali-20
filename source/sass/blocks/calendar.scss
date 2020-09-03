@@ -1,0 +1,66 @@
+.calendar {
+  position: relative;
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 22px;
+}
+
+.calendar__last-mounth {
+  position: absolute;
+  @include size(20px, 43px);
+  background-color: $basic-white;
+  border: none;
+  top: 613px;
+  left: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__next-mounth {
+  position: absolute;
+  @include size(20px, 43px);
+  background-color: $basic-white;
+  border: none;
+  top: 613px;
+  left: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__mounths {
+  @include font(bold, 20px, 20px);
+  border-top: 1px solid $color-border--grey-darker;
+  border-bottom: 1px solid $color-border--grey-darker;
+  padding: 12px 0 11px;
+  margin-bottom: 22px;
+}
+
+.calendar__day-name {
+  @include font-size(14px, 18px);
+  color: $basic-grey;
+
+  &--red {
+    color: $color-orange;
+  }
+}
+
+.calendar__date {
+  @include size(33px, 32px);
+  text-align: center;
+  border: 1px solid $color-border--grey;
+  color: $basic-grey-opacity;
+
+  &--selected {
+    background-color: $basic-special-blue;
+    color: $basic-white;
+  }
+
+  &--free {
+    background-color: $color-border--grey;
+    color: $basic-special-blue;
+  }
+
+  &--active {
+    border-color: $color-orange;
+  }
+}
