@@ -6,7 +6,7 @@
 }
 
 .calendar__last-mounth {
-position: absolute;
+  position: absolute;
   @include size(20px, 43px);
   background-color: $basic-white;
   border: none;

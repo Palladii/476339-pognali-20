@@ -21,7 +21,7 @@
 
 .map__link {
   @include a();
- font-weight: bold;
+  font-weight: bold;
   line-height: 18px;
   @include size(270px, 62px);
   border: 2px solid $basic-blue;
@@ -30,5 +30,4 @@
   background-color: $basic-yellow;
   border-radius: 10px;
   padding: 22px 86px 22px 22px;
-
 }

@@ -49,8 +49,10 @@
 }
 
 .filter-people__btn-submit {
+  font-family: inherit;
   position: relative;
   @include size(230px, 41px);
+  line-height: 17px;
   background-color: $basic-white;
   right: 10px;
 }

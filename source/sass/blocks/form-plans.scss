@@ -187,6 +187,7 @@
 .form-plans__action-plan {
   @include size(100%, 220px);
   @include font();
+  font-family: inherit;
   color: $basic-grey;
   outline: none;
   resize: none;

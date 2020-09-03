@@ -33,7 +33,7 @@
 }
 
 .filter-country__modal {
-  display: none;
+  display: block;
   position: relative;
 }
 
@@ -69,8 +69,8 @@
 }
 
 .filter-country__close-btn {
+  font-family: inherit;
+  @include font(bold, 16px, 20px);
   background-color: $color-border--grey-darker;
-  font-weight: bold;
-  line-height: 20px;
   margin-left: 25px;
 }
