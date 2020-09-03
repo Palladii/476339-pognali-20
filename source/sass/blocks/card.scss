@@ -367,6 +367,22 @@
     }
   }
 
+  &--big {
+    position: relative;
+    @include size(100px, 100px);
+    padding: 10px;
+    top: -15px;
+    left: 5px;
+
+    & .card__level-count {
+      @include font(bold, 38px, 38px);
+    }
+
+    & .card__level-text {
+      display: none;
+    }
+  }
+
   &--inverse {
     background-color: $opacity-black;
 
