@@ -22,6 +22,11 @@
   @media (min-width: $desktop-width) {
     width: 951px;
     margin-bottom: 60px;
+
+    &--narrow {
+      width: 285px;
+      margin-bottom: 81px;
+    }
   }
 }
 
