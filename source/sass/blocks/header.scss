@@ -1,9 +1,7 @@
 .header {
+  position: relative;
   background-color: $color-bg--dark-blue;
 
-  &--light {
-    background-color: $color-bg--blue;
-  }
 
   @media (min-width: $tablet-width) {
     background-color: $color-bg--blue;
@@ -18,10 +16,35 @@
   }
 }
 
+.header__nav {
+  padding-top: 27px;
+
+
+  &--open {
+    background-color: $basic-white;
+    color: $basic-medium-blue;
+    padding-top: 27px;
+  }
+
+  &--scroll {
+    position: fixed;
+    background-color: $basic-white;
+    color: $basic-medium-blue;
+    padding-top: 27px;
+    z-index: 1000;
+  }
+
+  &--no-js {
+    background-color: $basic-white;
+    color: $basic-medium-blue;
+    padding-top: 27px;
+  }
+}
+
 .header__wrapper {
+
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
   padding-bottom: 52px;
 }
 
@@ -35,6 +58,51 @@
   background-color: inherit;
   text-transform: uppercase;
   cursor: pointer;
+  background-image: url("../img/icon_menu_mobile.svg");
+  background-repeat: no-repeat;
+
+  &--open {
+    @include size(18px, 19px);
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: url("../img/icon_menu_mobile_close.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--scroll {
+    @include size(25px, 11px);
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: url("../img/menu-icon-grey.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--no-js {
+    display: none;
+  }
+
+  &--grey {
+    @include size(25px, 11px);
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: url("../img/menu-icon-grey.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

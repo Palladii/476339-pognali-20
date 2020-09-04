@@ -1,9 +1,8 @@
 .site-nav {
-  display: none;
   @include ul();
-  @include font(500, 20px, 20px);
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 51px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -16,5 +15,5 @@
 .site-nav__link {
   @include font(500, 30px, 35px);
   text-decoration: none;
-  color: $basic-white;
+  color: $basic-medium-blue;
 }

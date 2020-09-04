@@ -1,8 +1,28 @@
 .menu-nav {
   display: none;
-  position: absolute;
-  background-color: $basic-white;
-  padding-top: 24px;
-  width: 320px;
-  z-index: 5;
+  color: $basic-medium-blue;
+
+  &--open {
+    display: block;
+    position: absolute;
+    background-color: $basic-white;
+    color: $basic-medium-blue;
+    padding-top: 24px;
+    width: 320px;
+    z-index: 100;
+  }
+
+  &--no-js {
+    display: block;
+    position: relative;
+    background-color: $basic-white;
+    color: $basic-medium-blue;
+    padding-top: 24px;
+    width: 320px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

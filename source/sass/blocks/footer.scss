@@ -28,7 +28,7 @@
   @include a();
 }
 
-.footer-wrapper {
+.footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
