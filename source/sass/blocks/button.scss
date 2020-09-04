@@ -1,5 +1,8 @@
 .button {
+  position: relative;
+  @include font(bold, 17px, 30px);
   @include a();
+  @include size(270px, 50px);
   display: inline-block;
   vertical-align: middle;
   padding: 0;

@@ -1,0 +1,33 @@
+.map__wrapper {
+  margin-top: -30px;
+  background-color: $basic-yellow;
+  border-radius: 20px;
+  z-index: -6;
+}
+
+
+.map__address {
+  margin: 0 0 32px;
+  padding-top: 60px;
+  font-weight: bold;
+  color: $basic-special-blue;
+  width: 143px;
+}
+
+.map__btn {
+  padding-bottom: 35px;
+}
+
+
+.map__link {
+  @include a();
+  font-weight: bold;
+  line-height: 18px;
+  @include size(270px, 62px);
+  border: 2px solid $basic-blue;
+  cursor: pointer;
+  color: $basic-blue;
+  background-color: $basic-yellow;
+  border-radius: 10px;
+  padding: 22px 86px 22px 22px;
+}

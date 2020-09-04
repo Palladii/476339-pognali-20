@@ -1,0 +1,21 @@
+.steps {
+  position: relative;
+  background-color: $color-bg--grey-darker;
+  border-radius: 20px;
+  top: -30px;
+  color: $basic-special-blue;
+  z-index: 3;
+}
+
+.steps__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 29px;
+}
+
+.steps__title {
+  margin: 0;
+  padding: 0;
+}
