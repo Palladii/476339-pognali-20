@@ -10,14 +10,37 @@
 .registration__title {
   @include font(bold, 24px, 24px);
   color: $special-orange;
-  margin: 0 0 19px;
+  margin-bottom: 19px;
   padding-top: 102px;
+
+
+  @media (min-width: $tablet-width) {
+    @include font-size(45px, 45px);
+    margin-bottom: 59px;
+    padding-top: 133px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+    padding-top: 208px;
+  }
 }
 
 
 .registration__text {
-  margin: 0 0 29px;
+  margin-bottom: 29px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(28px, 32px);
+    margin-bottom: 65px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .registration__link {
@@ -41,6 +64,22 @@
 
   &::placeholder {
     padding-left: 25px;
+    @include font(bold, 18px, 18px);
+    color: $basic-grey-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include size(536px, 80px);
+    margin-bottom: 65px;
+
+    &::placeholder {
+      padding-left: 36px;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
+    @include size(850px, 81px);
   }
 }
 
@@ -52,10 +91,37 @@
   top: -62px;
   left: 210px;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include size(80px, 80px);
+    top: -142px;
+    left: 534px;
+
+    &::placeholder {
+      padding-left: 36px;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
+    @include size(850px, 81px);
+    top: -152px;
+    left: 934px;
+  }
 }
 
 .registration__questions {
-  margin: 0 0 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(28px, 30px);
+    margin-bottom: 40px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 
