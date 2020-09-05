@@ -1,15 +1,43 @@
 .travelers {
-  margin: 0 auto 54px;
+  margin: 0 0 54px 39px;
   padding-top: 102px;
-  width: 240px;
   color: $basic-white;
-}
-
-.travelers__title {
-  @include font(bold, 24px, 24px);
-  color: $special-orange;
 }
 
 .travelers__tagline {
   font-weight: bold;
+}
+
+
+.travelers__title {
+  @include font(bold, 24px, 24px);
+  margin-bottom: 19px;
+  padding-top: 33px;
+  color: $color-title--orange;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(45px, 45px);
+  }
+}
+
+.travelers__text {
+  width: 217px;
+  color: $basic-white;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(28px, 33px);
+    width: 427px;
+  }
+}
+
+.travelers__invite {
+  @include font(bold, 16px, 22px);
+  color: $basic-white;
+  padding-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(21px, 24px);
+    width: 260px;
+  }
 }

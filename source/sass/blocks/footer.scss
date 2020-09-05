@@ -3,7 +3,7 @@
   border-radius: 30px 30px 0 0;
   background-color: $basic-white;
   text-align: center;
-  margin-top: -20px;
+  padding-top: 37px;
 
 
   &::after {
@@ -13,9 +13,34 @@
     background-color: $special-light-grey;
     top: 167px;
     left: 20px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $basic-white;
+    }
   }
 }
 
 .footer__copyright {
   margin-bottom: 19px;
+}
+
+.footer__logo {
+  @include a();
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__social {
+  margin-top: 40px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

@@ -1,8 +1,14 @@
 .page {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   @include font();
   font-family: "Blogger Sans", "Arial", sans-serif;
   margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  max-width: 320px;
+  min-height: 100vh;
+  min-width: 320px;
+
+  &--catalog {
+    background-color: $color-bg--light-blue;
+  }
 }

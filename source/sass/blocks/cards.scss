@@ -1,15 +1,28 @@
 .cards {
-  background-color: $basic-light-blue;
+  position: relative;
+  background-color: $color-bg--light-blue;
+}
+
+.cards__link-wrapper {
+  text-align: center;
+  margin: 18px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 51px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 73px 0;
+  }
 }
 
 .cards__link {
-  display: block;
   position: relative;
   @include font(bold, 17px, 30px);
   text-decoration: none;
-  color: $basic-special-blue;
+  color: $color-text--blue;
   text-transform: uppercase;
-  margin: 18px 0 28px 80px;
+
 
   &::before {
     position: absolute;
@@ -18,5 +31,19 @@
     background-image: url("../img/show-more-plus.svg");
     top: 5px;
     left: -30px;
+  }
+}
+
+.cards__btn {
+  margin-bottom: 40px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 620px;
   }
 }

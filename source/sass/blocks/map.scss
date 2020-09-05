@@ -1,21 +1,48 @@
-.map__wrapper {
+.map {
   margin-top: -30px;
   background-color: $basic-yellow;
   border-radius: 20px;
   z-index: -6;
 }
 
+.map__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 
 .map__address {
   margin: 0 0 32px;
   padding-top: 60px;
+  font-style: normal;
   font-weight: bold;
+  text-transform: uppercase;
   color: $basic-special-blue;
   width: 143px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(28px, 28px);
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
 }
 
 .map__btn {
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
 }
 
 

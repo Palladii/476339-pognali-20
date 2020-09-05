@@ -1,6 +1,6 @@
 .about-service {
   position: relative;
-  background-color: $basic-blue;
+  background-color: $color-bg--dark-blue;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50%;
@@ -13,19 +13,43 @@
   @include font(bold, 24px, 24px);
   margin: 0 0 19px 29px;
   padding-top: 33px;
-  color: $special_orange;
+  color: $color-title--orange;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(45px, 45px);
+  }
 }
 
 .about-service__text {
   @include size(238px, 100%);
   color: $basic-white;
   margin: 0 0 20px 29px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(28px, 33px);
+    width: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 34px;
+    width: 619px;
+  }
 }
 
-.about-service__promo {
+.about-service__invite {
   @include size(202px, 100%);
   @include font(bold, 16px, 22px);
   color: $basic-white;
   margin-left: 29px;
   padding-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(21px, 25px);
+    width: 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+    width: 425px;
+  }
 }

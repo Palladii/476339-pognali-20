@@ -1,5 +1,5 @@
 .blockquote {
-  background-color: $basic-blue;
+  background-color: $color-bg--dark-blue;
   color: $basic-white;
 }
 
@@ -7,13 +7,42 @@
   @include size(167px, 100%);
   padding: 48px 0 109px;
   margin-top: -50px;
+
+  @media (min-width: $tablet-width) {
+    @include size(264px, 100%);
+    position: absolute;
+    top: 270px;
+    background-color: transparent;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    margin-left: 1035px;
+  }
 }
 
 .blockquote__text {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    @include font(300, 28px, 33px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(300, 28px, 32px);
+  }
 }
 
 .blockquote__author {
   font-weight: bold;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    @include font(bold, 21px, 25px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(300, 21px, 24px);
+  }
 }

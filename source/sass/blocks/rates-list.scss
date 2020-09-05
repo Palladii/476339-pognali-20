@@ -4,6 +4,46 @@
   counter-reset: li;
   margin: 0;
   padding: 0;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      @include size(198px, 285px);
+      background-color: $color-bg--grey;
+      border-radius: 20px;
+      top: -61px;
+      left: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include size(446px, 300px);
+      top: -70px;
+      left: 680px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    @include size(200px, 200px);
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: scale(0.5);
+    top: -200px;
+    left: 120px;
+
+    @media (min-width: $tablet-width) {
+      top: 130px;
+      left: 520px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 1000px;
+    }
+  }
 }
 
 .rates-list__item h4::before {
@@ -16,7 +56,12 @@
   padding: 10px 13px 11px;
   border-radius: 50%;
   color: $basic-white;
-  background-color: $special-orange;
+  background-color: $color-title--orange;
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    left: 0;
+  }
 }
 
 .rates-list__item:nth-child(2) h4::before {
@@ -30,9 +75,26 @@
 .rates-list__item {
   position: relative;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 45px;
+  }
 }
 
 .rates-list__title {
   @include font(300, 16px, 16px);
   margin: 0;
+}
+
+.rates-list__cost {
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 350px;
+  }
 }

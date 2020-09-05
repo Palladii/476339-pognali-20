@@ -1,13 +1,19 @@
 .site-nav {
   @include ul();
-
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 51px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    margin: 18px 160px 0 0;
+  }
 }
 
 .site-nav__link {
   @include font(500, 30px, 35px);
   text-decoration: none;
-  color: $basic-dark-blue;
+  color: $basic-medium-blue;
 }

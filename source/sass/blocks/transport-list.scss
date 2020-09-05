@@ -1,0 +1,38 @@
+.transport-list {
+  @include ul();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    &--flex-off {
+      position: absolute;
+      content: "";
+      display: initial;
+      top: 40px;
+      left: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &--flex-off {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 120px;
+        top: 180px;
+        left: 610px;
+      }
+    }
+  }
+}
+
+.transport-list__img {
+  opacity: 0.15;
+
+  &--active {
+    opacity: 1;
+  }
+}
