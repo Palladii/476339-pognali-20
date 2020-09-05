@@ -8,6 +8,11 @@
     margin-top: -40px;
   }
 
+  &--yellow {
+    text-align: left;
+    padding: 0 0 44px 61px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     top: 0;
@@ -22,6 +27,10 @@
 
 .user-nav__item {
   position: relative;
+
+  &--yellow {
+    margin-bottom: 23px;
+  }
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
@@ -88,7 +97,89 @@
   text-transform: uppercase;
 
   &--yellow {
-    margin-left: 0;
+    font-size: 18px;
+    color: $basic-yellow;
+  }
+}
+
+
+.user-nav__tel-img {
+  @include size(90px, 90px);
+}
+
+
+.user-nav__item {
+  position: relative;
+
+  &--yellow {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      display: block;
+    }
+  }
+
+  &--first {
+    order: 1;
+    margin-left: 88px;
+  }
+}
+
+.user-nav__svg-wrapper {
+  background-color: $special-dark-blue;
+  padding: 14px;
+  border-radius: 50%;
+  @include size(45px, 45px);
+
+  &--orange {
+    background-color: $color-title--orange;
+    left: 0;
+    top: -1px;
+  }
+
+  &--yellow {
+    background-color: $special-yellow;
+    left: 44px;
+    top: -1px;
+  }
+
+  &--big {
+    @include size(50px, 50px);
+    padding: 16px;
+  }
+}
+
+.user-nav__link {
+  text-decoration: none;
+  color: $basic-medium-blue;
+
+  &--flex {
+    display: flex;
+  }
+}
+
+.user-nav__btn {
+  @include size(179px, 40px);
+
+  &--wide {
+    width: 100%;
+    margin-bottom: 51px;
+  }
+}
+
+.user-nav__text {
+  margin: 10px 0 0 18px;
+  text-transform: uppercase;
+
+  &--yellow {
     font-size: 18px;
     color: $basic-yellow;
   }

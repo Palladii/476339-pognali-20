@@ -1,6 +1,7 @@
 .menu-nav {
   display: none;
   color: $basic-medium-blue;
+  margin: 0 auto;
 
   &--open {
     display: block;
@@ -26,3 +27,4 @@
     display: none;
   }
 }
+

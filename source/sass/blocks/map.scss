@@ -1,4 +1,5 @@
 .map {
+  position: relative;
   margin-top: -30px;
   background-color: $basic-yellow;
   border-radius: 20px;
@@ -34,7 +35,13 @@
 }
 
 .map__btn {
-  padding-bottom: 35px;
+  @include size(100%, 62px);
+  border: 2px solid $basic-blue;
+  cursor: pointer;
+  background-color: $basic-yellow;
+  border-radius: 10px;
+  padding: 20px 0 0 22px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -42,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    margin-top: 50px;
   }
 }
 
@@ -50,11 +58,8 @@
   @include a();
   font-weight: bold;
   line-height: 18px;
-  @include size(270px, 62px);
-  border: 2px solid $basic-blue;
-  cursor: pointer;
-  color: $basic-blue;
-  background-color: $basic-yellow;
-  border-radius: 10px;
-  padding: 22px 86px 22px 22px;
+}
+
+.map__img {
+  width: 100%;
 }
