@@ -51,12 +51,11 @@
 .header__toggle {
   @include size(25px, 11px);
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   padding: 0;
   border: none;
   color: inherit;
   background-color: inherit;
-  text-transform: uppercase;
   cursor: pointer;
   background-image: url("../img/icon_menu_mobile.svg");
   background-repeat: no-repeat;
@@ -103,6 +102,26 @@
     background-image: url("../img/menu-icon-grey.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    right: 375px;
+
+    &--open {
+      @include size(18px, 19px);
+      display: inline-block;
+      vertical-align: baseline;
+      border: none;
+      color: inherit;
+      background-color: inherit;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-image: url("../img/menu-icon-grey.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+
 
   @media (min-width: $desktop-width) {
     display: none;

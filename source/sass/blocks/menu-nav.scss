@@ -1,7 +1,9 @@
 .menu-nav {
   display: none;
+  width: 320px;
   color: $basic-medium-blue;
   margin: 0 auto;
+  z-index: 100;
 
   &--open {
     display: block;
@@ -19,11 +21,29 @@
     background-color: $basic-white;
     color: $basic-medium-blue;
     padding-top: 24px;
-    width: 320px;
+
+    @media (min-width: $tablet-width) {
+      &--no-js {
+        width: 768px;
+      }
+    }
+
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 1440px;
+
+      &--open {
+        display: none;
+        width: 1440px;
+        background-color: transparent;
+      }
+    }
   }
+}
 
-
-  @media (min-width: $tablet-width) {
+.menu-nav__social {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

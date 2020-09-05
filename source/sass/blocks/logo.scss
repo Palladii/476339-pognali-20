@@ -14,8 +14,10 @@
 
 
   @media (min-width: $tablet-width) {
+    @include size(166px, 42px);
+
+
     &--white {
-      @include size(166px, 42px);
       background-image: url("../img/logo-tablet-white@1x.png");
       background-repeat: no-repeat;
     }
@@ -27,6 +29,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include size(200px, 52px);
+
     &--white {
       @include size(200px, 52px);
       background-image: url("../img/logo-desktop-white@1x.png");

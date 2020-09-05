@@ -18,9 +18,7 @@
     top: 0;
 
     &--flex {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: -40px;
+      display: none;
     }
   }
 }
@@ -33,20 +31,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      display: none;
-    }
+
   }
 
   @media (min-width: $desktop-width) {
-    &:not(:last-child) {
-      display: block;
-    }
-  }
 
-  &--first {
-    order: 1;
-    margin-left: 88px;
   }
 }
 
@@ -90,6 +79,21 @@
     width: 100%;
     margin-bottom: 51px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--wide {
+      display: block;
+      position: absolute;
+      top: -275px;
+      left: 450px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--wide {
+      position: relative;
+    }
+  }
 }
 
 .user-nav__text {
@@ -113,18 +117,6 @@
 
   &--yellow {
     margin-bottom: 23px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      display: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:not(:last-child) {
-      display: block;
-    }
   }
 
   &--first {
@@ -167,6 +159,7 @@
 }
 
 .user-nav__btn {
+  position: relative;
   @include size(179px, 40px);
 
   &--wide {
