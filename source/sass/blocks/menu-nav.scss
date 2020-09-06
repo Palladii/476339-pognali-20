@@ -1,5 +1,6 @@
 .menu-nav {
   display: none;
+  position: relative;
   width: 320px;
   color: $basic-medium-blue;
   margin: 0 auto;
@@ -7,13 +8,40 @@
 
   &--open {
     display: block;
-    position: absolute;
-    background-color: $basic-white;
-    color: $basic-medium-blue;
-    padding-top: 24px;
-    width: 320px;
-    z-index: 100;
   }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+
+    &--open {
+      display: block;
+      position: absolute;
+      background-color: $basic-white;
+      color: $basic-medium-blue;
+      padding-top: 24px;
+      z-index: 100;
+      width: 768px;
+      top: 121px;
+    }
+}
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 1440px;
+    background-color: transparent;
+    top: -100px;
+
+
+    &--open {
+      display: block;
+      width: 1440px;
+      background-color: transparent;
+      top: 0;
+    }
+  }
+
 
   &--no-js {
     display: block;
@@ -23,26 +51,16 @@
     padding-top: 24px;
 
     @media (min-width: $tablet-width) {
-      &--no-js {
-        width: 768px;
-      }
-    }
-
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 1440px;
-
-      &--open {
-        display: none;
-        width: 1440px;
-        background-color: transparent;
-      }
+      width: 768px;
     }
   }
 }
 
 .menu-nav__social {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
