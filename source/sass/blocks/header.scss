@@ -9,10 +9,6 @@
 
   @media (min-width: $desktop-width) {
     background-color: $color-bg--dark-blue;
-
-    &--light {
-      background-color: $color-bg--blue;
-    }
   }
 }
 
@@ -31,6 +27,8 @@
     position: fixed;
     background-color: $basic-white;
     color: $basic-medium-blue;
+    width: 320px;
+    margin: 0 auto;
     padding-top: 27px;
     z-index: 1000;
   }
@@ -40,38 +38,43 @@
     color: $basic-medium-blue;
     padding-top: 27px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--scroll {
+      width: 768px;
+      padding-top: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--scroll {
+      width: 1440px;
+      padding-top: 18px;
+    }
+  }
 }
 
 .header__wrapper {
-
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 52px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
 }
 
 .header__toggle {
   @include size(25px, 11px);
-  display: inline-block;
-  vertical-align: baseline;
-  padding: 0;
   border: none;
   color: inherit;
   background-color: inherit;
   cursor: pointer;
   background-image: url("../img/icon_menu_mobile.svg");
   background-repeat: no-repeat;
+  margin-left: 125px;
 
   &--open {
-    @include size(18px, 19px);
-    display: inline-block;
-    vertical-align: middle;
-    border: none;
-    color: inherit;
-    background-color: inherit;
-    text-transform: uppercase;
-    cursor: pointer;
-    background-image: url("../img/icon_menu_mobile_close.svg");
-    background-repeat: no-repeat;
+    display: none;
   }
 
   &--scroll {
@@ -105,30 +108,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    right: 375px;
 
     &--open {
-      @include size(18px, 19px);
-      display: inline-block;
-      vertical-align: baseline;
-      border: none;
-      color: inherit;
-      background-color: inherit;
-      text-transform: uppercase;
-      cursor: pointer;
-      background-image: url("../img/menu-icon-grey.svg");
-      background-repeat: no-repeat;
+      display: none;
     }
   }
-
-
 
   @media (min-width: $desktop-width) {
     display: none;
   }
-}
-
-.header__auth {
-  position: relative;
 }

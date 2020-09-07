@@ -1,14 +1,17 @@
 .menu-nav {
   display: none;
-  position: relative;
-  width: 320px;
-  color: $basic-medium-blue;
-  margin: 0 auto;
-  z-index: 100;
+
+  &--scroll {
+    display: none;
+  }
 
   &--open {
     display: block;
+    min-height: 506px;
+    color: $basic-medium-blue;
+    padding-bottom: 41px;
   }
+
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -17,52 +20,35 @@
 
     &--open {
       display: block;
-      position: absolute;
-      background-color: $basic-white;
-      color: $basic-medium-blue;
-      padding-top: 24px;
-      z-index: 100;
+      margin: 0 auto;
       width: 768px;
-      top: 121px;
+      background-color: $basic-white;
     }
-}
-
+  }
   @media (min-width: $desktop-width) {
-    display: block;
-    width: 1440px;
     background-color: transparent;
-    top: -100px;
 
 
     &--open {
-      display: block;
-      width: 1440px;
       background-color: transparent;
-      top: 0;
     }
-  }
 
 
-  &--no-js {
-    display: block;
-    position: relative;
-    background-color: $basic-white;
-    color: $basic-medium-blue;
-    padding-top: 24px;
+    &--no-js {
+      display: block;
+      position: relative;
+      background-color: $basic-white;
+      color: $basic-medium-blue;
+      padding-top: 24px;
 
-    @media (min-width: $tablet-width) {
-      width: 768px;
+      @media (min-width: $tablet-width) {
+        width: 768px;
+      }
     }
   }
 }
 
 .menu-nav__social {
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+  position: relative;
+  top: 450px;
 }
-

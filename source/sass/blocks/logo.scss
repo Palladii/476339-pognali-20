@@ -1,7 +1,6 @@
 .logo {
   @include size(96px, 15px);
 
-
   &--white {
     background-image: url("../img/logo-mobile-white@1x.png");
     background-repeat: no-repeat;
@@ -12,6 +11,16 @@
     background-repeat: no-repeat;
   }
 
+  &--scroll {
+    background-image: url("../img/logo-mobile-blue@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--open {
+    background-image: url("../img/logo-mobile-blue@1x.png");
+    background-repeat: no-repeat;
+    width: 110px;
+  }
 
   @media (min-width: $tablet-width) {
     @include size(166px, 42px);
@@ -26,7 +35,18 @@
       background-image: url("../img/logo-tablet-blue@1x.png");
       background-repeat: no-repeat;
     }
+
+    &--scroll {
+      background-image: url("../img/logo-tablet-blue@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    &--open {
+        background-image: url("../img/logo-tablet-blue@1x.png");
+        background-repeat: no-repeat;
+      }
   }
+
 
   @media (min-width: $desktop-width) {
     @include size(200px, 52px);
@@ -38,6 +58,16 @@
     }
 
     &--blue {
+      background-image: url("../img/logo-desktop-blue@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    &--scroll {
+      background-image: url("../img/logo-desktop-blue@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    &--open {
       background-image: url("../img/logo-desktop-blue@1x.png");
       background-repeat: no-repeat;
     }

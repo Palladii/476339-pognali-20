@@ -2,7 +2,14 @@
   @include font(bold, 16px, 18px);
   @include ul();
 
+  &--open {
+   position: absolute;
+    top: 330px;
+    right: 50px;
+  }
+
   &--flex {
+    @include ul();
     display: flex;
     flex-wrap: wrap;
     margin-top: -40px;
@@ -15,6 +22,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    &--open {
+      position: static;
+    }
 
     &--flex {
       display: none;
@@ -30,15 +41,22 @@
       position: relative;
       margin-left: 850px;
 
-
-    &--flex {
-      display: flex;
-      position: relative;
-      margin-left: 850px;
-    }
-
     &--flex {
       display: none;
+    }
+
+    &--yellow {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    &--open {
+      position: relative;
+      top: 0;
+      right: 250px;
     }
   }
 }
@@ -49,34 +67,21 @@
   &--yellow {
     margin-bottom: 23px;
   }
+}
+
+.user-nav__contact-wrapper {
+  color: $blue-original;
 
   @media (min-width: $tablet-width) {
-    &--auth {
+    &--open {
       display: block;
+      color: $blue-original;
+      z-index: 2;
       position: absolute;
-    }
-
-    &--tel {
-      display: none;
-    }
-
-    &--mail {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &--auth {
-      display: block;
-      position: absolute;
-    }
-
-    &--tel {
-      display: none;
-    }
-
-    &--mail {
-      display: none;
+      top: 0;
+      width: 400px;
+      height: 50px;
+      background-color: tomato;
     }
   }
 }
@@ -104,6 +109,16 @@
     padding: 16px;
   }
 
+  @media (min-width: $tablet-width) {
+    &--mail {
+      display: none;
+    }
+
+    &--tel {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--mail {
       @include size(50px, 50px);
@@ -129,48 +144,33 @@
 }
 
 .user-nav__btn {
-  position: relative;
-  width: 100%;
-  margin-bottom: 51px;
+  @include size(100%, 50px);
+
+
+  &--open {
+    margin-bottom: 21px;
+  }
+
 
   &--hidden {
     @include size(179px, 40px);
   }
 
+
   @media (min-width: $tablet-width) {
-      display: block;
-      position: absolute;
-    top: -275px;
-    left: 310px;
+    margin-left: 110px;
 
 
     &--open {
       display: block;
-      position: absolute;
-      top: -245px;
-      left: 350px;
+      position: relative;
+      left: 250px;
+      z-index: 3;
     }
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    position: relative;
-    top: 0;
-    left: 286px;
-  }
-}
-
-.user-nav__text {
-  margin: 10px 0 0 18px;
-  text-transform: uppercase;
-
-  &--yellow {
-    font-size: 18px;
-    color: $basic-yellow;
-  }
-
-  @media (min-width: $desktop-width) {
-  display: none;
+    margin-left: 0;
   }
 }
 
@@ -196,5 +196,13 @@
   &--yellow {
     font-size: 18px;
     color: $basic-yellow;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

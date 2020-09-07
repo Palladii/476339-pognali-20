@@ -1,4 +1,5 @@
 .profile {
+  position: relative;
   background-color: $extra-light-grey;
   padding-bottom: 54px;
 }
@@ -16,17 +17,45 @@
 }
 
 .profile__avatar {
+  @include size(100px, 100px);
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    @include size(94px, 94px);
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(190px, 190px);
+    border-radius: 5px 5px 0 0;
+  }
 }
 
 .profile__change-btn {
   @include font(500, 20px, 18px);
+  @include size(100%, 40px);
   background-color: $color-button--grey;
+
+  @media (min-width: $tablet-width) {
+   height: 60px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(190px, 47px);
+    position: absolute;
+    top: 0;
+  }
+}
+
+.profile__textarea-wrapper {
+
 }
 
 .profile__subtitle {
   position: relative;
   font-weight: bold;
+  line-height: 18px;
   color: $basic-special-blue;
   text-transform: uppercase;
   background-color: $extra-light-grey;
@@ -36,30 +65,72 @@
     width: 82px;
     top: 10px;
     left: 100px;
-
     padding-left: 20px;
   }
 
   &--transport {
-    width: 82px;
+    width: 102px;
     top: -10px;
     left: 80px;
-    padding-left: 20px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(500, 20px, 20px);
+
+    &--tags {
+      width: 90px;
+      top: 95px;
+      left: 280px;
+      padding-left: 10spx;
+    }
+
+    &--transport {
+      position: absolute;
+      width: 132px;
+      top: 92px;
+      left: 80px;
+      padding-left: 20px;
+    }
   }
 }
 
 .profile__hash-tag {
+  @include size(100%, 89px);
   outline: none;
   resize: none;
   border: 1px solid $color-border--grey;
   border-radius: 10px;
   background-color: $extra-light-grey;
-  padding: 27px 86px 26px 25px;
+  padding: 27px 20px 27px 25px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+   width: 735px;
+  }
 }
 
 .profile__transport-wrapper {
   @include size(100%, 63px);
   border: 1px solid $color-border--grey;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+  @include size(308px, 104px);
+    position: absolute;
+    top: 35px;
+    left: 250px;
+}
+}
+
+.profile__transport {
+
+
+  @media (min-width: $desktop-width) {
+    width: 735px;
+  }
 }
