@@ -4,19 +4,43 @@
   background-color: $color-button--grey;
   color: $basic-special-blue;
   border-radius: 20px;
-  top: -20px;
+  top: -40px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
 }
 
 .plans__title {
   @include font(bold, 24px, 24px);
   padding-top: 28px;
-  margin: 0 0 29px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(36px, 36px);
+    padding-top: 57px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    margin-bottom: 49px;
+  }
 }
 
 .plans__country-list {
   @include ul();
   padding-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+    margin-bottom: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 94px;
+  }
 }
 
 .plans__country-item {
@@ -24,28 +48,102 @@
   border-radius: 10px;
   padding-bottom: 23px;
   margin-bottom: 10px;
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 37px 42px;
+  }
+}
+
+.plans__country-title {
+  @include font(bold, 16px, 16px);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0 0 23px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(24px, 24px);
+    justify-content: space-between;
+    padding: 40px 31px 0 36px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: initial;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.plans__country-number {
+  margin-right: 5px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 36px;
+    order: -1;
+  }
 }
 
 .plans__country {
-  @include font(bold, 16px, 16px);
   margin: 0;
-  padding: 24px 0 0 23px;
+}
+
+.plans__country-wrapper {
+  @include font(500, 14px, 14px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0 0 23px 25px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 20px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 34px 15px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 589px;
+    padding: 0;
+  }
 }
 
 .plans__travelers {
-  padding-left: 25px;
   margin: 0 0 5px;
+  letter-spacing: 0.06em;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.01em;
+  }
 }
 
 .plans__dates {
-  padding-left: 25px;
   margin: 0 0 24px;
+  letter-spacing: 0.06em;
 }
 
 .plans__link {
   @include a();
   color: $basic-black;
   opacity: 0.3;
-  padding: 0 0 23px 25px;
-  padding-bottom: 40px;
+  letter-spacing: 0.03em;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0.08em;
+  }
 }

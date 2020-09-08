@@ -4,7 +4,7 @@
   padding-bottom: 54px;
 }
 
-.profile__level-wrapper {
+.profile__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -12,7 +12,7 @@
   padding-top: 20px;
 }
 
-.profile__level {
+.profile__level-wrapper {
   margin-top: 20px;
 }
 
@@ -26,18 +26,36 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     @include size(190px, 190px);
     border-radius: 5px 5px 0 0;
+    top: -190px;
+    right: 80px;
+  }
+}
+
+.profile__preferences-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile__textarea-wrapper {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 732px;
   }
 }
 
 .profile__change-btn {
+  font-family: inherit;
   @include font(500, 20px, 18px);
   @include size(100%, 40px);
   background-color: $color-button--grey;
 
   @media (min-width: $tablet-width) {
-   height: 60px;
+    height: 60px;
     border-radius: 10px;
   }
 
@@ -45,11 +63,12 @@
     @include size(190px, 47px);
     position: absolute;
     top: 0;
+    right: 80px;
   }
 }
 
-.profile__textarea-wrapper {
-
+.profile__btn-hidden {
+  display: none;
 }
 
 .profile__subtitle {
@@ -82,21 +101,36 @@
       width: 90px;
       top: 95px;
       left: 280px;
-      padding-left: 10spx;
+      padding-left: 10px;
+      letter-spacing: 0.08em;
     }
 
     &--transport {
       position: absolute;
-      width: 132px;
+      width: 152px;
       top: 92px;
       left: 80px;
       padding-left: 20px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--transport {
+      position: relative;
+      width: 152px;
+      top: 98px;
+      left: 80px;
+      padding-left: 20px;
+      letter-spacing: 0.1em;
     }
   }
 }
 
 .profile__hash-tag {
   @include size(100%, 89px);
+  @include font-size(16px, 18px);
+  color: $basic-grey-dark-opacity;
   outline: none;
   resize: none;
   border: 1px solid $color-border--grey;
@@ -106,11 +140,15 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    @include font-size(20px, 22px);
     padding: 36px 40px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
-   width: 735px;
+    width: 735px;
+    resize: none;
+    outline: none;
   }
 }
 
@@ -120,15 +158,23 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-  @include size(308px, 104px);
+    @include size(300px, 104px);
     position: absolute;
     top: 35px;
     left: 250px;
-}
+  }
+
+  @media (min-width: $desktop-width) {
+   position: static;
+  }
 }
 
 .profile__transport {
 
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    margin-top: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 735px;

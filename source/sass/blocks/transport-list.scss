@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding-bottom: 20px;
 
+
   @media (min-width: $tablet-width) {
     &--flex-off {
       position: absolute;
@@ -14,6 +15,11 @@
       display: initial;
       top: 40px;
       left: 620px;
+    }
+
+    &--wide {
+     margin-top: 35px;
+      width: 173px;
     }
 
     @media (min-width: $desktop-width) {

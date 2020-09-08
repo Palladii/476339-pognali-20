@@ -5,14 +5,19 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
+
+    &--narrow {
+      width: 618px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1320px;
+
+    &--narrow {
+      width: 1258px;
+    }
   }
 
-  &--narrow {
-    width: 221px;
-    margin: 0 auto;
-  }
+
 }

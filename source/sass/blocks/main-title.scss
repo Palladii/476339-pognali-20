@@ -1,13 +1,7 @@
 .main-title {
-  background-color: $color-bg--blue;
   border-radius: 0 0 30px 30px;
-  margin-top: -2px;
   padding: 9px 0;
   z-index: 1;
-
-  @media (min-width: $tablet-width) {
-    padding: 67px 0;
-  }
 }
 
 .main-title__title {
