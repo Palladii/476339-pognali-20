@@ -1,51 +1,30 @@
 .site-nav {
-  display: none;
+  //display: none;
+  text-transform: uppercase;
+  text-align: center;
 
-
-  &--open {
-    display: block;
-    position: absolute;
-    @include ul();
-    text-transform: uppercase;
-    text-align: center;
-    top: 200px;
-    right: 60px;
-  }
 
   @media (min-width: $tablet-width) {
-    display: none;
-
-    &--open {
-      display: block;
-      position: absolute;
-      @include ul();
-      text-transform: uppercase;
-      text-align: left;
-      top: 200px;
-      left: 30px;
-      z-index: 2;
-    }
+    text-align: left;
   }
+
+  .site-nav__list {
+    @include ul();
+  }
+}
+
+
+.site__nav-list {
+  @include ul();
 
   @media (min-width: $desktop-width) {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
-    color: $basic-white;
     width: 390px;
     margin: 0;
     top: 50px;
     left: 400px;
-
-    &--scroll {
-      color: $basic-medium-blue;
-    }
-
-
-    &--open {
-      position: relative;
-    }
   }
 }
 
@@ -53,12 +32,24 @@
   @include font(500, 30px, 35px);
   text-decoration: none;
 
-
   @media (min-width: $tablet-width) {
     @include font-size(60px, 31px);
   }
 
   @media (min-width: $desktop-width) {
     @include font-size(20px, 20px);
+  color: inherit;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.site-nav__item {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 }

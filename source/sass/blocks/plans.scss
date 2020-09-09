@@ -3,7 +3,7 @@
   @include font(500, 14px, 14px);
   background-color: $color-button--grey;
   color: $basic-special-blue;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   top: -40px;
   z-index: 1;
 
@@ -31,15 +31,14 @@
 
 .plans__country-list {
   @include ul();
-  padding-bottom: 23px;
+  padding-bottom: 59px;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 44px;
-    margin-bottom: 96px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 118px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 94px;
+    padding-bottom: 131px;
   }
 }
 

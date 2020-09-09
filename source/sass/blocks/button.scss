@@ -1,49 +1,69 @@
-.button {
-  position: relative;
-  @include font(bold, 17px, 30px);
-  @include a();
+.button-round {
+  //@include a();
   display: inline-block;
   vertical-align: middle;
-  padding: 0;
   border: none;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   cursor: pointer;
   color: $color-bg--dark-blue;
   background-color: $basic-yellow;
-  border-radius: 25px;
+  border-radius: 20px;
+  text-align: center;
 
+  &--m {
+    @include size(100%, 40px);
+    @include font(bold, 17px, 40px);
+    @include a();
+    text-transform: uppercase;
+  }
 
-  &--rectangle {
-    @include size(100%, 62px);
-    @include font(bold, 18px, 18px);
-    color: $color-text--blue;
-    text-transform: none;
-    border-radius: 10px;
-    padding: 22px 0 0 23px;
-
-    @media (min-width: $tablet-width) {
-      @include font(bold, 24px, 24px);
-      @include size(616px, 80px);
-      height: 80px;
-      padding-top: 28px;
-      border-radius: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 274px;
-      padding-top: 28px;
+  @media (min-width: $tablet-width) {
+    &--m {
+      @include size(284px, 80px);
+      @include font-size(24px, 24px);
+      text-transform: none;
+      text-align: left;
+      padding: 29px 0 0 34px;
     }
   }
 
-  &--ellipse {
-    @include font(bold, 17px, 20px);
-    text-align: center;
-    padding-top: 12px;
-
-    @media (min-width: $tablet-width) {
-      @include font(bold, 20px, 20px);
-      @include size(188px, 50px);
-      padding-top: 16px;
+  @media (min-width: $desktop-width) {
+    &--m {
+      width: 286px;
     }
   }
+
+  //&--rectangle {
+  //  @include size(100%, 62px);
+  //  @include font(bold, 24px, 18px);
+  //  color: $color-text--blue;
+  //  text-transform: none;
+  //  border-radius: 10px;
+  //  padding: 22px 0 0 23px;
+  //
+  //  @media (min-width: $tablet-width) {
+  //    @include font(bold, 24px, 24px);
+  //    @include size(616px, 80px);
+  //    height: 80px;
+  //    padding-top: 28px;
+  //    border-radius: 10px;
+  //  }
+  //
+  //  @media (min-width: $desktop-width) {
+  //    width: 274px;
+  //    padding-top: 28px;
+  //  }
+  //}
+  //
+  //&--ellipse {
+  //  @include font(bold, 17px, 20px);
+  //  text-align: center;
+  //  padding-top: 12px;
+  //
+  //  @media (min-width: $tablet-width) {
+  //    @include font(bold, 20px, 20px);
+  //    @include size(188px, 50px);
+  //    padding-top: 16px;
+  //  }
+  //}
 }

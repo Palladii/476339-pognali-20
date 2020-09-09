@@ -2,22 +2,22 @@
   display: flex;
   @include ul();
   justify-content: center;
-  margin-bottom: 41px;
+
 
   @media (min-width: $tablet-width) {
     margin: 0;
     justify-content: left;
   }
 
+
   @media (min-width: $desktop-width) {
-    &--open {
       display: none;
-    }
   }
 }
 
 .social__item {
   margin-right: 27px;
+
 
   &--yellow {
     @include size(45px, 45px);

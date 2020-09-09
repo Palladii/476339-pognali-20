@@ -1,19 +1,15 @@
 .user-nav {
+
   @include font(bold, 16px, 18px);
   @include ul();
 
-  &--open {
-   position: absolute;
-    top: 330px;
-    right: 50px;
-  }
 
-  &--flex {
-    @include ul();
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -40px;
-  }
+  //&--flex {
+  //  @include ul();
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  margin-top: -40px;
+  //}
 
   &--yellow {
     text-align: left;
@@ -23,23 +19,15 @@
   @media (min-width: $tablet-width) {
     display: block;
 
-    &--open {
-      position: static;
-    }
-
     &--flex {
       display: none;
     }
 
-    &--open {
-      display: block;
-    }
   }
 
   @media (min-width: $desktop-width) {
       display: flex;
-      position: relative;
-      margin-left: 850px;
+
 
     &--flex {
       display: none;
@@ -53,13 +41,12 @@
       margin: 0;
     }
 
-    &--open {
-      position: relative;
-      top: 0;
-      right: 250px;
+    //&--open {
+    //  position: relative;
+    //  top: 0;
+    //  right: 250px;
     }
   }
-}
 
 .user-nav__item {
   position: relative;
@@ -82,6 +69,10 @@
       width: 400px;
       height: 50px;
       background-color: tomato;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
     }
   }
 }
@@ -109,38 +100,42 @@
     padding: 16px;
   }
 
-  @media (min-width: $tablet-width) {
-    &--mail {
-      display: none;
-    }
-
-    &--tel {
-      display: none;
-    }
-  }
+  //@media (min-width: $tablet-width) {
+  //  &--mail {
+  //    display: none;
+  //  }
+  //
+  //  &--tel {
+  //    display: none;
+  //  }
+  //}
 
   @media (min-width: $desktop-width) {
-    &--mail {
-      @include size(50px, 50px);
-      padding: 16px;
-      background-color: $special-yellow;
-    }
-
-    &--tel {
-      @include size(50px, 50px);
-      padding: 16px;
-      background-color: $color-title--orange;
-    }
+    @include size(50px, 50px);
+    padding: 16px;
+    background-color: $special-yellow;
+    //&--mail {
+    //  @include size(50px, 50px);
+    //  padding: 16px;
+    //  background-color: $special-yellow;
+    //}
+    //
+    //&--tel {
+    //  @include size(50px, 50px);
+    //  padding: 16px;
+    //  background-color: $color-title--orange;
+    //}
   }
 }
 
 .user-nav__link {
+  display: flex;
   text-decoration: none;
   color: $basic-medium-blue;
 
-  &--flex {
-    display: flex;
-  }
+  //&--flex {
+  //
+  //}
 }
 
 .user-nav__btn {
@@ -183,23 +178,17 @@
 .user-nav__link {
   text-decoration: none;
   color: $basic-medium-blue;
-
-  &--flex {
     display: flex;
-  }
+  align-items: center;
 }
 
 .user-nav__text {
-  margin: 10px 0 0 18px;
+  margin-left: 10px;
   text-transform: uppercase;
 
   &--yellow {
     font-size: 18px;
     color: $basic-yellow;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 
   @media (min-width: $desktop-width) {

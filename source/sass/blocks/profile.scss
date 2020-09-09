@@ -2,6 +2,11 @@
   position: relative;
   background-color: $extra-light-grey;
   padding-bottom: 54px;
+  margin-top: -30px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .profile__wrapper {
@@ -9,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 18px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .profile__level-wrapper {
@@ -31,6 +36,7 @@
     border-radius: 5px 5px 0 0;
     top: -190px;
     right: 80px;
+    z-index: 3;
   }
 }
 

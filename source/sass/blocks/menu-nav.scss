@@ -7,18 +7,17 @@
 
   &--open {
     display: block;
-    min-height: 506px;
     color: $basic-medium-blue;
-    padding-bottom: 41px;
   }
 
 
   @media (min-width: $tablet-width) {
     display: block;
-    position: absolute;
+    //position: absolute;
     background-color: transparent;
 
     &--open {
+      position: relative;
       display: block;
       margin: 0 auto;
       width: 768px;
@@ -49,6 +48,6 @@
 }
 
 .menu-nav__social {
-  position: relative;
-  top: 450px;
+  //position: relative;
+  //top: 450px;
 }

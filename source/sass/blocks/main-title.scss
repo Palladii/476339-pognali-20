@@ -15,7 +15,7 @@
     @include size(214px, 4px);
     background-color: $color-title--orange;
     border-radius: 4px;
-    top: 55px;
+    top: 83px;
     left: 0;
   }
 
@@ -24,8 +24,16 @@
 
     &::after {
       @include size(354px, 4px);
-      top: 137px;
+      top: 117px;
       left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font-size(60px, 60px);
+
+      &::after {
+        @include size(354px, 4px);
+      }
     }
   }
 }
@@ -44,10 +52,12 @@
 }
 
 .main-title__wrapper {
+  position: relative;
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 2;
   }
 }
 
