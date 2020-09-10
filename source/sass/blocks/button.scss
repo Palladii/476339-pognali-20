@@ -5,16 +5,39 @@
   border: none;
   //text-transform: uppercase;
   cursor: pointer;
-  color: $color-bg--dark-blue;
-  background-color: $basic-yellow;
   border-radius: 20px;
   text-align: center;
 
   &--m {
-    @include size(100%, 40px);
+    width: 100%;
+    min-height: 40px;
     @include font(bold, 17px, 40px);
     @include a();
     text-transform: uppercase;
+    background-color: $basic-yellow;
+    color: $color-bg--dark-blue;
+  }
+
+  &--grey {
+    width: 100%;
+    min-height: 40px;
+    @include font(500, 20px, 18px);
+    @include a();
+    font-family: inherit;
+    text-transform: uppercase;
+    background-color: $color-button--grey;
+    color: $color-bg--blue;
+  }
+
+  &--white {
+    width: 100%;
+    min-height: 41px;
+    @include font(bold, 17px, 17px);
+    border-radius: 25px;
+    font-family: inherit;
+    text-transform: uppercase;
+    background-color: $basic-white;
+    color: $color-bg--dark-blue;
   }
 
   @media (min-width: $tablet-width) {
@@ -25,45 +48,63 @@
       text-align: left;
       padding: 29px 0 0 34px;
     }
+
+    &--grey {
+      min-height: 60px;
+      @include font(500, 20px, 18px);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      border-radius: 10px;
+    }
+
+    &--white {
+      min-height: 50px;
+      @include font-size(20px, 20px);
+    }
   }
 
   @media (min-width: $desktop-width) {
     &--m {
       width: 286px;
     }
-  }
 
-  //&--rectangle {
-  //  @include size(100%, 62px);
-  //  @include font(bold, 24px, 18px);
-  //  color: $color-text--blue;
-  //  text-transform: none;
-  //  border-radius: 10px;
-  //  padding: 22px 0 0 23px;
-  //
-  //  @media (min-width: $tablet-width) {
-  //    @include font(bold, 24px, 24px);
-  //    @include size(616px, 80px);
-  //    height: 80px;
-  //    padding-top: 28px;
-  //    border-radius: 10px;
-  //  }
-  //
-  //  @media (min-width: $desktop-width) {
-  //    width: 274px;
-  //    padding-top: 28px;
-  //  }
-  //}
-  //
-  //&--ellipse {
-  //  @include font(bold, 17px, 20px);
-  //  text-align: center;
-  //  padding-top: 12px;
-  //
-  //  @media (min-width: $tablet-width) {
-  //    @include font(bold, 20px, 20px);
-  //    @include size(188px, 50px);
-  //    padding-top: 16px;
-  //  }
-  //}
+    &--grey {
+      width: 190px;
+      min-height: 47px;
+    }
+  }
 }
+
+//&--rectangle {
+//  @include size(100%, 62px);
+//  @include font(bold, 24px, 18px);
+//  color: $color-text--blue;
+//  text-transform: none;
+//  border-radius: 10px;
+//  padding: 22px 0 0 23px;
+//
+//  @media (min-width: $tablet-width) {
+//    @include font(bold, 24px, 24px);
+//    @include size(616px, 80px);
+//    height: 80px;
+//    padding-top: 28px;
+//    border-radius: 10px;
+//  }
+//
+//  @media (min-width: $desktop-width) {
+//    width: 274px;
+//    padding-top: 28px;
+//  }
+//}
+//
+//&--ellipse {
+//  @include font(bold, 17px, 20px);
+//  text-align: center;
+//  padding-top: 12px;
+//
+//  @media (min-width: $tablet-width) {
+//    @include font(bold, 20px, 20px);
+//    @include size(188px, 50px);
+//    padding-top: 16px;
+//  }
+//}

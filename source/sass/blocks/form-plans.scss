@@ -35,6 +35,14 @@
   }
 }
 
+.form-plans__inner-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 
 .form-plans__line-break {
   @media (min-width: $desktop-width) {
@@ -159,12 +167,12 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 450px;
+    top: 400px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 300px;
+    top: 400px;
     right: 150px;
   }
 }

@@ -7,9 +7,10 @@
   margin-top: -20px;
   padding-top: 65px;
   z-index: -1;
+  border-radius: 0 0 20px 20px;
 }
 
-.filter-country__wrapper-title {
+.filter-country__title-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,10 +22,34 @@
   color: $basic-medium-blue;
   text-transform: uppercase;
   padding-left: 27px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    @include font-size(20px, 20px);
+  }
+}
+
+.filter-country__title-punkt {
+  display: none;
+
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .filter-country__btn {
   @include size(17px, 3px);
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
   margin-top: 20px;
 
   &--close {
@@ -32,25 +57,62 @@
   }
 }
 
-.filter-country__modal {
-  display: block;
-  position: relative;
+.filter-country__btn-show {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    @include font(bold, 20px, 20px);
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: $basic-blue;
+    width: 160px;
+    top: -20px;
+    right: 200px;
+  }
 }
 
 .filter-country__list {
-  @include ul();
-  margin-bottom: 21px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 368px;
+    @include ul();
+    margin-bottom: 21px;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    right: 300px;
+    order: initial;
+  }
+}
+
+.filter-country__modal {
+  display: none;
+  position: relative;
 }
 
 .filter-country__link {
   @include a();
   font-weight: bold;
   line-height: 18px;
+  color: $basic-blue;
   opacity: 0.3;
   text-transform: uppercase;
 
+
   &--active {
     opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 20px);
   }
 }
 

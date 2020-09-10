@@ -137,7 +137,7 @@
           <img class="profile__avatar" src="img/demin-desktop@1x.jpg" width="100"
                height="100" alt="Аватарка">
         </div>
-        <button class="profile__change-btn button"><span class="profile__btn-hidden">сменить</span>&#32фото</button>
+        <button class="profile__change-btn button-round button-round--grey"><span class="profile__btn-hidden">сменить</span>&#32фото</button>
         <div class="profile__preferences-wrapper">
           <div class="profile__textarea-wrapper">
             <h4 class="profile__subtitle profile__subtitle--tags">теги:</h4>
@@ -247,34 +247,32 @@
 
   <section class="steps">
     <div class="container">
-      <div class="steps__wrapper">
         <h2 class="steps__title">Добавить план:</h2>
-        <ul class="steps__list">
-          <li class="steps__item steps__item--active">
-            <a class="steps__btn" href="#step-1" aria-label="шаг 1">
-              <span class="steps__name steps__name--active">Даты</span>
-            </a>
-          </li>
-          <li class="steps__item">
-            <a class="steps__btn" href="#step-2" aria-label="шаг 2">
-              <span class="steps__name">Маршрут</span>
-            </a>
-          </li>
-          <li class="steps__item">
-            <a class="steps__btn" href="#step-3" aria-label="шаг 3">
-              <span class="steps__name">Развлечения</span>
-            </a>
-          </li>
-        </ul>
-      </div>
 
       <form class="steps__form form-plans" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-plans__fieldset" id="step-1">
           <div class="container container--narrowest">
-            <div class="form-plans__legend-wrapper">
               <legend class="form-plans__legend">Шаг 1.<br class="form-plans__line-break">&#32Даты пребывания</legend>
+            <div class="form-plans__inner-wrapper">
               <p class="form-plans__text">Укажите предпочтительное количество попутчиков, которых вы&nbspхотели бы
                 позвать в поездку и ее предполагаемую длительность.</p>
+            <ul class="steps__list steps__list--on">
+              <li class="steps__item steps__item--active">
+                <a class="steps__btn" href="#step-1" aria-label="шаг 1">
+                  <span class="steps__name steps__name--active">Даты</span>
+                </a>
+              </li>
+              <li class="steps__item">
+                <a class="steps__btn" href="#step-2" aria-label="шаг 2">
+                  <span class="steps__name">Маршрут</span>
+                </a>
+              </li>
+              <li class="steps__item">
+                <a class="steps__btn" href="#step-3" aria-label="шаг 3">
+                  <span class="steps__name">Развлечения</span>
+                </a>
+              </li>
+            </ul>
             </div>
             <div class="form-plans__wrapper">
               <div class="form-plans__label-wrapper">
@@ -391,10 +389,27 @@
 
         <fieldset class="form-plans__fieldset" id="step-2">
           <div class="container container--narrowest">
-            <div class="form-plans__legend-wrapper">
               <legend class="form-plans__legend">Шаг 2.<br class="form-plans__line-break">&#32Маршрут</legend>
-              <p class="form-plans__text form-plans__text--mg-m">Укажите страны, которые вы хотели посетить.<br class="form-plans__line-break">Это может быть одна или сразу
+              <div class="form-plans__inner-wrapper">
+                <p class="form-plans__text form-plans__text--mg-m">Укажите страны, которые вы хотели посетить.<br class="form-plans__line-break">Это может быть одна или сразу
                 несколько.</p>
+              <ul class="steps__list">
+                <li class="steps__item steps__item--active">
+                  <a class="steps__btn" href="#step-1" aria-label="шаг 1">
+                    <span class="steps__name steps__name--active">Даты</span>
+                  </a>
+                </li>
+                <li class="steps__item">
+                  <a class="steps__btn" href="#step-2" aria-label="шаг 2">
+                    <span class="steps__name">Маршрут</span>
+                  </a>
+                </li>
+                <li class="steps__item">
+                  <a class="steps__btn" href="#step-3" aria-label="шаг 3">
+                    <span class="steps__name">Развлечения</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="form-plans__countries-wrapper">
               <div class="form-plans__countries">
@@ -564,11 +579,27 @@
 
         <fieldset class="form-plans__fieldset" id="step-3">
           <div class="container container--narrowest">
-            <div class="form-plans__legend-wrapper">
               <legend class="form-plans__legend">Шаг 3.<br class="form-plans__line-break">&#32Развлечения</legend>
-              <p class="form-plans__text form-plans__text--mg-l">Наконец, расскажите о своих планах времяпровождения. Можно писать в
-                свободной
-                форме и ставить тэги.</p>
+            <div class="form-plans__inner-wrapper">
+            <p class="form-plans__text form-plans__text--mg-l">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+                свободной форме и ставить тэги.</p>
+              <ul class="steps__list">
+                <li class="steps__item steps__item--active">
+                  <a class="steps__btn" href="#step-1" aria-label="шаг 1">
+                    <span class="steps__name steps__name--active">Даты</span>
+                  </a>
+                </li>
+                <li class="steps__item">
+                  <a class="steps__btn" href="#step-2" aria-label="шаг 2">
+                    <span class="steps__name">Маршрут</span>
+                  </a>
+                </li>
+                <li class="steps__item">
+                  <a class="steps__btn" href="#step-3" aria-label="шаг 3">
+                    <span class="steps__name">Развлечения</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="form-plans__action-list">
               <div class="form-plans__action-item">
