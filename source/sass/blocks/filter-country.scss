@@ -35,15 +35,6 @@
   }
 }
 
-.filter-country__title-punkt {
-  display: none;
-
-
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-  }
-}
-
 .filter-country__btn {
   @include size(17px, 3px);
   display: inline-block;
@@ -51,10 +42,6 @@
   border: none;
   cursor: pointer;
   margin-top: 20px;
-
-  &--close {
-    display: none;
-  }
 }
 
 .filter-country__btn-show {
@@ -73,8 +60,25 @@
   }
 }
 
+.filter-country__countries {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 253px 253px 253px 253px 253px;
+    margin-left: 37px;
+    margin-top: 64px;
+    row-gap: 50px;
+  }
+}
+
 .filter-country__list {
   display: none;
+
+  &--block {
+    display: block;
+    position: relative;
+    @include ul();
+    margin-top: 35px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -94,8 +98,9 @@
 }
 
 .filter-country__modal {
-  display: none;
+  display: block;
   position: relative;
+  z-index: 5;
 }
 
 .filter-country__link {
@@ -124,15 +129,48 @@
   padding-bottom: 28px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .filter-country__table {
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .filter-country__close-btn {
-  font-family: inherit;
-  @include font(bold, 16px, 20px);
-  background-color: $color-border--grey-darker;
-  margin-left: 25px;
+  width: 270px;
+  background-color: $color-button--dark-blue;
+  margin: 28px 0 0 -25px;
+
+  @media (min-width: $tablet-width) {
+    width: 615px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    min-height: 100px;
+    line-height: 20px;
+    letter-spacing: initial;
+  }
+}
+
+.filter-country__alphabet-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.filter-country__table {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
 }

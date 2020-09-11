@@ -1,12 +1,50 @@
+.country-list {
+  padding: 20px 19px;
+  z-index: 5;
+
+
+  //&--padding-less {
+  //  margin: 0;
+  //  padding: 0;
+  //}
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 20px);
+    width: 184px;
+    padding: 37px 23px 0 25px;
+    margin: 0;
+    border-left: 1px solid $color-border--grey-opacity;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+    padding: 44px 26px 0 26px;
+    margin: 0;
+    border-left: 1px solid $color-border--grey-opacity;
+  }
+}
+
 .country-list__item {
   @include ul();
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .country-list__link {
   @include a();
+  color: $basic-grey;
 
+  //&--grey-text {
+  // display: none;
+  //}
 
-  &--grey-text {
-    color: $basic-grey;
+  @media (min-width: $desktop-width) {
+    //&--grey-text {
+    //  display: block;
+    //  color: $basic-grey;
+    //}
   }
 }

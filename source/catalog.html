@@ -158,9 +158,8 @@
       <div class="filter-country__wrapper">
         <div class="container">
           <div class="filter-country__title-wrapper">
-            <h2 class="filter-country__title">Фильтрация по странам<span class="filter-country__title-punkt">:</span>
-            </h2>
-            <ul class="filter-country__list">
+            <h2 class="filter-country__title">Фильтрация по странам:</h2>
+            <ul class="filter-country__list filter-country__list--block">
               <li class="filter-country__item filter-country__item--active">
                 <a href="#" class="filter-country__link filter-country__link--active">Eвропа</a>
               </li>
@@ -175,9 +174,8 @@
               </li>
             </ul>
             <button class="filter-country__btn" type="button">
-              <span class="filter-country__btn-show">Показать все</span>
+              <span class="filter-country__btn-show" aria-label="Показать все/Закрыть">Показать все</span>
             </button>
-            <button class="filter-country__btn--close button" type="button" aria-label="Свернуть"></button>
           </div>
         </div>
       </div>
@@ -185,134 +183,392 @@
       <div class="filter-country__modal">
         <div class="filter-country__modal-wrapper">
           <div class="container container--narrow">
-
-
             <div class="filter-country__alphabet-wrapper">
               <table class="filter-country__table alphabet">
                 <tr class="alphabet__rows">
-                  <td class="alphabet__columns alphabet__columns--active-dark">
-                    <a href="form.html#a" class="alphabet__link alphabet__link--active-dark">а</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark alphabet__columns--active-dark">
+                    <a class="alphabet__link  alphabet__link--active-dark" href="#">а</a>
                   </td>
-                  <td class="alphabet__columns alphabet__columns--white">
-                    <a href="#" class="alphabet__link">б</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">б</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">в</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">в</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">г</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">г</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">д</a>
-                  </td>
-                </tr>
-                <tr class="alphabet__rows">
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">е</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">з</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">и</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">к</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">л</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">д</a>
                   </td>
                 </tr>
                 <tr class="alphabet__rows">
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">м</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">е</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">н</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">з</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">о</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">и</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">п</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">к</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">р</a>
-                  </td>
-                </tr>
-                <tr class="alphabet__rows">
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">с</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">т</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">у</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">ф</a>
-                  </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">х</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">л</a>
                   </td>
                 </tr>
                 <tr class="alphabet__rows">
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">ч</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">м</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">ш</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">н</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">э</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">о</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">ю</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">п</a>
                   </td>
-                  <td class="alphabet__columns">
-                    <a href="#" class="alphabet__link">я</a>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">р</a>
+                  </td>
+                </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">с</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">т</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">у</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">ф</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">х</a>
+                  </td>
+                </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">ч</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">ш</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">э</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">ю</a>
+                  </td>
+                  <td class="alphabet__columns alphabet__columns--bg-dark">
+                    <a class="alphabet__link alphabet__link--big-letters " href="#">я</a>
                   </td>
                 </tr>
               </table>
-              <ul class="filter-country__list country-list" id="a">
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Австралия</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Австрия</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Азербайджан</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Албания</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Алжир</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Ангола</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Андорра</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Антигуа и Барбуда</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Аргентина</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Армения</a>
-                </li>
-                <li class="country-list__item">
-                  <a class="country-list__link country-list__link--grey-text" href="">Афганистан</a>
-                </li>
-              </ul>
+              <div class="filter-country__countries countries">
+                <div class="countries__wrap">
+                  <span class="countries__letters">A</span>
+                  <ul class="countries__list countries__list--active" id="a">
+                   <li class="countries__input"><a class="countries__link" href="">Австралия</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Австрия</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Азербайджан</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Албания</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Алжир</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Ангола</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Андорра</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Антигуа и Барбуда</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Аргентина</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Армения</a></li>
+                   <li class="countries__input"><a class="countries__link" href="">Афганистан</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">Б</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Багамские Острова</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бангладеш</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Барбадос</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бахрейн</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Белоруссия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Белиз</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бельгия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бенин</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Болгария</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Боливия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Босния и Герцеговина</a>
+                    </li>
+                   <li class="countries__input"><a href="" class="countries__link">Ботсвана</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бразилия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бруней</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Буркина-Фасо</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бурунди</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Бутан</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">В</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Вануату</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Великобритания</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Венгрия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Венесуэла</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Восточный Тимор</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Вьетнам</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">Г</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Габон</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гаити</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гайана</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гамбия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гана</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гватемала</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гвинея</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гвинея-Бисау</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Германия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гондурас</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Гренада</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Греция</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Грузия</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">Д</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Дания</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Джибути</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Доминика</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Доминикана</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">Е</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__list">Египет</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">З</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__list">Замбия</a></li>
+                   <li class="countries__input"><a href="" class="countries__list">Зимбабве</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">И</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Израиль</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Индия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Индонезия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Иордания</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Ирак</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Иран</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Ирландия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Исландия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Испания</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Италия</a></li>
+                  </ul>
+                </div>
+                <div class="countries__wrap">
+                  <span class="countries__letters">К</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Кабо-Верде</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Казахстан</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Камбоджа</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Камерун</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Канада</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Катар</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Кения</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Кипр</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Киргизия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Кирибати</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Китай</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Колумбия</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Л</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Лаос</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Латвия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Лесото</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Либерия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Ливан</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Ливия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Литва</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Лихтенштейн</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Люксембург</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">М</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Маврикий</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Мавритания</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Мадагаскар</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Малави</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Малайзия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Мали</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Мальдивы</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Мальта</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Марокко</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Н</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Намибия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Науру</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Непал</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Нигер</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Нигерия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Нидерланды</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Никарагуа</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Новая Зеландия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Норвегия</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">О</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">ОАЭ</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Оман</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">П</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Пакистан</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Палау</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Панама</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Папуа - Новая Гвинея</a>
+                    </li>
+                   <li class="countries__input"><a href="" class="countries__link">Парагвай</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Перу</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Польша</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Португалия</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Р</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Руанда</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Румыния</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Россия</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">С</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Сальвадор</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Самоа</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Сан-Марино</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Саудовская</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Сейшелы</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Сенегал</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Сербия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Сингапур</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Сирия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Словакия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Словения</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">США</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Т</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Таджикистан</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Таиланд</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Танзания</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Того</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Тонга</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Тринидад и Тобаго</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Тувалу</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Тунис</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Туркмения</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Турция</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">У</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Уганда</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Узбекистан</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Украина</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Уругвай</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Ф</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Фиджи</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Филиппины</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Финляндия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Франция</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Х</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Хорватия</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Ч</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Чад</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Черногория</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Чехия</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Чили</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Ш</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Швейцария</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Швеция</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Шри-Ланка</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Э</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Эквадор</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Эритрея</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Эсватини</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Эстония</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Эфиопия</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Ю</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">ЮАР</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Южный Судан</a></li>
+                  </ul>
+                </div>
+                <div class="countries-wrap">
+                  <span class="countries__letters">Я</span>
+                  <ul class="countries__list">
+                   <li class="countries__input"><a href="" class="countries__link">Ямайка</a></li>
+                   <li class="countries__input"><a href="" class="countries__link">Япония</a></li>
+                  </ul>
+                </div>
+                </ul>
+              </div>
+              <button class="filter-country__close-btn button-round button-round--grey" type="button">свернуть
+              </button>
             </div>
           </div>
-          <button class="filter-country__close-btn button" type="button">свернуть</button>
         </div>
       </div>
     </div>
@@ -327,8 +583,8 @@
             <fieldset class="filter-people__fieldset">
               <div class="filter-people__fieldset-wrapper">
                 <div class="filter-people__legend-wrapper">
-                <legend class="filter-people__legend">хобби</legend>
-                <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
+                  <legend class="filter-people__legend">хобби</legend>
+                  <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
                 </div>
                 <ul class="filter-people__list">
                   <li class="filter-people__item">
@@ -349,8 +605,8 @@
             <fieldset class="filter-people__fieldset">
               <div class="filter-people__fieldset-wrapper">
                 <div class="filter-people__legend-wrapper">
-                <legend class="filter-people__legend">музыка</legend>
-                <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
+                  <legend class="filter-people__legend">музыка</legend>
+                  <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
                 </div>
                 <ul class="filter-people__list">
                   <li class="filter-people__item">
@@ -371,8 +627,8 @@
             <fieldset class="filter-people__fieldset">
               <div class="filter-people__fieldset-wrapper">
                 <div class="filter-people__legend-wrapper">
-                <legend class="filter-people__legend">еда</legend>
-                <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
+                  <legend class="filter-people__legend">еда</legend>
+                  <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
                 </div>
                 <ul class="filter-people__list">
                   <li class="filter-people__item">
@@ -396,8 +652,8 @@
             <fieldset class="filter-people__fieldset">
               <div class="filter-people__fieldset-wrapper">
                 <div class="filter-people__legend-wrapper">
-                <legend class="filter-people__legend">транспорт</legend>
-                <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
+                  <legend class="filter-people__legend">транспорт</legend>
+                  <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
                 </div>
                 <ul class="filter-people__list transport-list">
                   <li class="transport-list__item">
@@ -430,8 +686,8 @@
             <fieldset class="filter-people__fieldset">
               <div class="filter-people__fieldset-wrapper">
                 <div class="filter-people__legend-wrapper">
-                <legend class="filter-people__legend">левел</legend>
-                <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
+                  <legend class="filter-people__legend">левел</legend>
+                  <button class="filter-people__btn" type="button" aria-label="Открыть/Закрыть"></button>
                 </div>
                 <div class="filter-people__level-wrap">
                   <div class="filter-people__level-controls">

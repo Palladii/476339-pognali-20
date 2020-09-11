@@ -1,6 +1,18 @@
 .alphabet {
-  width: 220px;
   border-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+padding: 35px 0 33px 27px;
+
+    &--bg-dark {
+     background-color: $color-bg--grey;
+      border-spacing: 44px 35px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+   border-spacing: 15px;
+  }
 }
 
 .alphabet__table {
@@ -14,18 +26,50 @@
   border: 1px solid $color-border--grey;
   background-color: $basic-white;
 
+  //&--active {
+  //  background-color: $basic-light-blue;
+  //}
+
   &--active {
-    background-color: $basic-light-blue;
+    background-color: $color-bg--light-blue;
   }
 
   &--active-dark {
     background-color: $basic-special-blue;
-    color: $basic-white;
+  }
+
+
+  //&--active-dark {
+  //  background-color: $basic-special-blue;
+  //  color: $basic-white;
+  //}
+
+  @media (min-width: $tablet-width) {
+    @include size(55px, 70px);
+
+    &--active {
+      background-color: $basic-special-blue;
+    }
+
+    &--active-dark {
+      color: $basic-dark-blue;
+    }
+
+    &--bg-dark {
+      background-color: $color-bg--grey;
+      @include size(49px, 50px);
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    border-radius: 4px;
   }
 }
 
 .alphabet__link {
-@include a();
+  @include a();
   @include font(500, 14px, 18px);
   color: $basic-special-blue;
   text-transform: uppercase;
@@ -33,4 +77,25 @@
   &--active-dark {
     color: $basic-white;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 20px);
+
+
+    &--active {
+      color: $basic-white;
+    }
+
+    &--active-dark {
+      color: $basic-dark-blue;
+      @include font-size(60px, 60px);
+    }
+
+    &--big-letters {
+      @include font-size(60px, 60px);
+      color: $basic-blue;
+      opacity: 0.3;
+    }
+  }
 }
+

@@ -1,0 +1,40 @@
+.countries__letters {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+@include font(bold, 60px, 60px);
+    color: $basic-blue;
+    margin-bottom: 30px;
+  }
+}
+
+.countries__list {
+  @include ul();
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.countries__link {
+  text-decoration: none;
+  color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 30px);
+  }
+}
+
+.countries__input {
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+}
