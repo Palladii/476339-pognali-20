@@ -1,17 +1,15 @@
 .user-nav {
-
   @include font(bold, 16px, 18px);
   @include ul();
 
+  &--flex {
+    @include ul();
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -40px;
+  }
 
-  //&--flex {
-  //  @include ul();
-  //  display: flex;
-  //  flex-wrap: wrap;
-  //  margin-top: -40px;
-  //}
-
-  &--yellow {
+  &--left {
     text-align: left;
     padding: 0 0 44px 61px;
   }
@@ -22,62 +20,41 @@
     &--flex {
       display: none;
     }
-
   }
 
   @media (min-width: $desktop-width) {
-      display: flex;
-
+    display: flex;
 
     &--flex {
       display: none;
     }
 
-    &--yellow {
+    &--left {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       padding: 0;
       margin: 0;
     }
-
-    //&--open {
-    //  position: relative;
-    //  top: 0;
-    //  right: 250px;
-    }
   }
+}
 
 .user-nav__item {
   position: relative;
 
-  &--yellow {
+  &--mg-large {
     margin-bottom: 23px;
   }
 }
 
 .user-nav__contact-wrapper {
   color: $blue-original;
-
-  @media (min-width: $tablet-width) {
-    &--open {
-      display: block;
-      color: $blue-original;
-      z-index: 2;
-      position: absolute;
-      top: 0;
-      width: 400px;
-      height: 50px;
-      background-color: tomato;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
-.user-nav__svg-wrapper {
+.user-nav__svg-wrap {
   background-color: $special-dark-blue;
   padding: 14px;
   border-radius: 50%;
@@ -110,10 +87,12 @@
   //  }
   //}
 
+
   @media (min-width: $desktop-width) {
     @include size(50px, 50px);
     padding: 16px;
     background-color: $special-yellow;
+
     //&--mail {
     //  @include size(50px, 50px);
     //  padding: 16px;
@@ -130,68 +109,241 @@
 
 .user-nav__link {
   display: flex;
+  align-items: center;
   text-decoration: none;
   color: $basic-medium-blue;
-
-  //&--flex {
-  //
-  //}
 }
 
-.user-nav__btn {
-  @include size(100%, 50px);
-
-
-  &--open {
-    margin-bottom: 21px;
-  }
-
-
-  &--hidden {
-    @include size(179px, 40px);
-  }
-
-
-  @media (min-width: $tablet-width) {
-    margin-left: 110px;
-
-
-    &--open {
-      display: block;
-      position: relative;
-      left: 250px;
-      z-index: 3;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-  }
-}
-
+//.user-nav__btn {
+//  @include size(100%, 50px);
+//
+//  @media (min-width: $tablet-width) {
+//
+//  }
+//
+//  @media (min-width: $desktop-width) {
+//    margin-left: 0;
+//  }
+//}
 
 .user-nav__tel-img {
   @include size(90px, 90px);
 }
 
-
 .user-nav__link {
   text-decoration: none;
   color: $basic-medium-blue;
-    display: flex;
-  align-items: center;
 }
 
 .user-nav__text {
-  margin-left: 10px;
+  margin: 0 0 0 18px;
   text-transform: uppercase;
 
   &--yellow {
-    font-size: 18px;
     color: $basic-yellow;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
+
+
+//.user-nav {
+//
+//  @include font(bold, 16px, 18px);
+//  @include ul();
+//
+//
+//  //&--flex {
+//  //  @include ul();
+//  //  display: flex;
+//  //  flex-wrap: wrap;
+//  //  margin-top: -40px;
+//  //}
+//
+//  //&--yellow {
+//  //  text-align: left;
+//  //  padding: 0 0 44px 61px;
+//  //}
+//
+//  @media (min-width: $tablet-width) {
+//    display: block;
+//
+//    //&--flex {
+//    //  display: none;
+//    //}
+//
+//  }
+//
+//
+//  @media (min-width: $desktop-width) {
+//      display: flex;
+//
+//
+//    //&--flex {
+//    //  display: none;
+//    //}
+//    //
+//    //&--yellow {
+//    //  display: flex;
+//    //  flex-wrap: wrap;
+//    //  justify-content: center;
+//    //  padding: 0;
+//    //  margin: 0;
+//    //}
+//
+//    //&--open {
+//    //  position: relative;
+//    //  top: 0;
+//    //  right: 250px;
+//    }
+//  }
+//
+//.user-nav__item {
+//  position: relative;
+//
+//  //&--yellow {
+//  //  margin-bottom: 23px;
+//  //}
+//}
+//
+//.user-nav__contact-wrapper {
+//  color: $blue-original;
+//
+//  //@media (min-width: $tablet-width) {
+//  //  &--open {
+//  //    display: block;
+//  //    color: $blue-original;
+//  //    z-index: 2;
+//  //    position: absolute;
+//  //    top: 0;
+//  //    width: 400px;
+//  //    height: 50px;
+//  //    background-color: tomato;
+//  //  }
+//
+//    @media (min-width: $desktop-width) {
+//      display: flex;
+//    }
+//  }
+//}
+//
+//.user-nav__svg-wrapper {
+//  background-color: $special-dark-blue;
+//  padding: 14px;
+//  border-radius: 50%;
+//  @include size(45px, 45px);
+//
+//  ////&--orange {
+//  ////  background-color: $color-title--orange;
+//  ////  left: 0;
+//  ////  top: -1px;
+//  ////}
+//  ////
+//  ////&--yellow {
+//  ////  background-color: $special-yellow;
+//  ////  left: 44px;
+//  ////  top: -1px;
+//  ////}
+//  //
+//  &--big {
+//    @include size(50px, 50px);
+//    padding: 16px;
+//  }
+//
+//  //@media (min-width: $tablet-width) {
+//  //  &--mail {
+//  //    display: none;
+//  //  }
+//  //
+//  //  &--tel {
+//  //    display: none;
+//  //  }
+//  //}
+//
+//  @media (min-width: $desktop-width) {
+//    @include size(50px, 50px);
+//    padding: 16px;
+//    background-color: $special-yellow;
+//    //&--mail {
+//    //  @include size(50px, 50px);
+//    //  padding: 16px;
+//    //  background-color: $special-yellow;
+//    //}
+//    //
+//    //&--tel {
+//    //  @include size(50px, 50px);
+//    //  padding: 16px;
+//    //  background-color: $color-title--orange;
+//    //}
+//  }
+//}
+//
+//.user-nav__link {
+//  display: flex;
+//  align-items: center;
+//  text-decoration: none;
+//  color: $basic-medium-blue;
+//
+//  //&--flex {
+//  //
+//  //}
+//}
+//
+////.user-nav__btn {
+////  @include size(100%, 50px);
+////
+////
+////  &--open {
+////    margin-bottom: 21px;
+////  }
+////
+////
+////  &--hidden {
+////    @include size(179px, 40px);
+////  }
+////
+////
+////  @media (min-width: $tablet-width) {
+////    margin-left: 110px;
+////
+////
+////    &--open {
+////      display: block;
+////      position: relative;
+////      left: 250px;
+////      z-index: 3;
+////    }
+////  }
+////
+////  @media (min-width: $desktop-width) {
+////    margin-left: 0;
+////  }
+////}
+//
+//
+//.user-nav__tel-img {
+//  @include size(90px, 90px);
+//}
+//
+//
+//.user-nav__link {
+//  text-decoration: none;
+//  color: $basic-medium-blue;
+//}
+//
+//.user-nav__text {
+//  margin-left: 10px;
+//  text-transform: uppercase;
+//
+//  &--yellow {
+//  color: $basic-yellow;
+//    font-size: 18px;
+//  }
+//
+//  @media (min-width: $desktop-width) {
+//    display: none;
+//  }
+//}

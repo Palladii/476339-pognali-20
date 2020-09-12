@@ -1,5 +1,6 @@
 .main-title {
   border-radius: 0 0 30px 30px;
+  margin: 0;
   padding: 9px 0;
   z-index: 1;
 }
@@ -51,11 +52,10 @@
   }
 }
 
-.main-title__wrapper {
-  position: relative;
+.main-title__container {
+
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     z-index: 2;
   }
@@ -65,7 +65,7 @@
   background-color: $blue-original;
   border-radius: 0 0 30px 30px;
   margin-top: -2px;
-  padding: 9px 0;
+  padding: 40px 0 9px;
   z-index: 2;
   @include font(bold, 30px, 36px);
   color: $basic-white;
