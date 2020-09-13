@@ -59,6 +59,7 @@
       @include size(22px, 22px);
     }
   }
+}
 
   //@media (min-width: $desktop-width) {
   //  &--fb {
@@ -72,8 +73,7 @@
   //  &--inst {
   //    @include size(24px, 24px);
   //  }
-  }
-}
+
 
 
 //.social {

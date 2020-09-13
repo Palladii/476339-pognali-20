@@ -47,14 +47,19 @@
 
 .card__avatar {
   position: relative;
+  @include size(100%, 270px);
   border-radius: 10px 10px 0 0;
   width: 100%;
+  overflow: hidden;
 
   &--round {
     border-radius: 50%;
   }
 
   @media (min-width: $tablet-width) {
+    @include size(285px, 286px);
+    border-radius: 20px 20px 0 0;
+
     &--round {
       border-radius: 20px;
       @include size(190px, 190px);

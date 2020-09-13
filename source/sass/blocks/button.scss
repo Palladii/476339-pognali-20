@@ -99,6 +99,39 @@
   }
 }
 
+.button-rect {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+
+  &--s {
+    @include a();
+    @include font(bold, 18px, 18px);
+    width: 100%;
+    min-height: 62px;
+    text-transform: uppercase;
+    background-color: $basic-yellow;
+    color: $color-bg--dark-blue;
+    padding: 23px 0 0 23px;
+    border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      @include font-size(24px, 24px);
+      min-height: 82px;
+      height: 80px;
+      padding: 31px 0 0 32px;
+      border-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include size(280px, 80px);
+      padding: 29px 0 0 33px;
+    }
+  }
+}
+
+
 //&--rectangle {
 //  @include size(100%, 62px);
 //  @include font(bold, 24px, 18px);

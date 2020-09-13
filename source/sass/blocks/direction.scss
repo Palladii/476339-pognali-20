@@ -31,6 +31,27 @@
   }
 }
 
+.direction__quantity {
+  position: relative;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    @include size(14px, 114px);
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    color: $basic-black;
+    top: 3px;
+    right: 505px;
+
+    @media (min-width: $tablet-width) {
+      top: -2px;
+      @include size(20px, 20px);
+    }
+  }
+}
+
 .direction__text {
   color: $basic-grey;
 
@@ -76,9 +97,9 @@
 }
 
 .direction__description-wrapper {
+  position: relative;
   display: flex;
   background-color: $basic-white;
-  position: relative;
   border-radius: 10px;
   margin-top: -20px;
   z-index: 1;
@@ -107,6 +128,44 @@
   @include font(bold, 21px, 21px);
   margin: 0;
   margin-bottom: 2px;
+
+  &::before {
+    content: "";
+    display: block;
+    @include size(35px, 24px);
+    position: absolute;
+    top: 86px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $mobile-width-only) {
+      left: 25px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 70px;
+      height: 47px;
+      top: 17px;
+      right: 149px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 24px;
+      right: 152px;
+    }
+  }
+
+  &--thai::before {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--fran::before {
+    background-image: url("../img/flag-france.svg");
+  }
+
+  &--cze::before {
+    background-image: url("../img/flag-czech.svg");
+  }
 }
 
 .direction__quantity {
@@ -133,7 +192,15 @@
 }
 
 .direction__btn {
+  position: relative;
   margin-bottom: 40px;
+
+  &::after {
+  position: absolute;
+    content: "";
+    background-image: url("source/img/");
+  }
+
 
 
   @media (min-width: $tablet-width) {

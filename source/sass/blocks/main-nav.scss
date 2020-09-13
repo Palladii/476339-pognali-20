@@ -8,6 +8,10 @@
   min-height: 434px;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
+  }
+
 
   @media (min-width: $tablet-width) {
     background-color: $color-bg--blue;
@@ -17,6 +21,10 @@
     background-size: auto;
     text-align: center;
     min-height: 879px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +34,10 @@
     background-size: auto;
     min-height: 679px;
     text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg");
+    }
   }
 }
 

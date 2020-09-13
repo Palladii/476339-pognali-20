@@ -5,10 +5,9 @@
   margin-top: -50px;
   background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position:
-    150px 100px,
-    -5px 355px;
-  border-radius: 30px;
+  background-position: 150px 100px, -5px 355px;
+  border-radius: 10px;
+  background-size: 143px 143px, 64px 71px;
 
   &::before {
     content: "";
@@ -21,7 +20,23 @@
     background-color: $color-bg--dark-blue;
     border-radius: 0 20px 20px 0;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
+    border-radius: 20px;
+    background-position: 40px 486px, -5px 355px;
+    background-size: 143px 143px, 285px 285px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rogovaya-back-desktop@2x.png");
+    }
+  }
 }
+
 
 .site-users__wrapper {
   @media (min-width: $desktop-width) {
