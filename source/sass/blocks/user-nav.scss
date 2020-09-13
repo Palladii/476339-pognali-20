@@ -107,12 +107,13 @@
   }
 }
 
-.user-nav__link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: $basic-medium-blue;
-}
+//
+//.user-nav__link {
+//  display: flex;
+//  align-items: center;
+//  text-decoration: none;
+//  color: $basic-medium-blue;
+//}
 
 //.user-nav__btn {
 //  @include size(100%, 50px);
@@ -126,13 +127,28 @@
 //  }
 //}
 
-.user-nav__tel-img {
-  @include size(90px, 90px);
-}
+//.user-nav__tel-img {
+//  @include size(90px, 90px);
+//}
 
 .user-nav__link {
+  display: flex;
   text-decoration: none;
   color: $basic-medium-blue;
+}
+
+.user-nav__svg {
+  @include size(16px, 16px);
+  fill: $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    @include size(26px, 26px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(28px, 28px);
+    fill: $color-bg--blue;
+  }
 }
 
 .user-nav__text {
@@ -141,7 +157,6 @@
 
   &--yellow {
     color: $basic-yellow;
-    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
