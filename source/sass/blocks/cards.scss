@@ -35,7 +35,21 @@
 }
 
 .cards__btn {
+  position: relative;
   margin-bottom: 40px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    top: 25px;
+    right: 22px;
+    display: block;
+    border: 6px solid transparent;
+    border-left: 10px solid $basic-special-blue;
+    z-index: 10;
+  }
 
 
   @media (min-width: $tablet-width) {

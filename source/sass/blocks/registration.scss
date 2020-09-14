@@ -100,6 +100,19 @@
   left: 210px;
   border-radius: 10px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    top: 25px;
+    right: 22px;
+    display: block;
+    border: 6px solid transparent;
+    border-left: 10px solid indianred;
+    z-index: 10;
+  }
+
   @media (min-width: $tablet-width) {
     @include size(80px, 80px);
     top: -142px;

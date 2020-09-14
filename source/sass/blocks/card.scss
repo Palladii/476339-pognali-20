@@ -321,6 +321,7 @@
 }
 
 .card__btn {
+  position: relative;
   @include size(230px, 40px);
   @include font(bold, 17px, 17px);
   color: $color-text--blue;
@@ -329,17 +330,17 @@
   text-align: center;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
-    @include size(150px, 50px);
-    position: absolute;
-    top: 180px;
-    left: 270px;
-  }
+    @media (min-width: $tablet-width) {
+      @include size(150px, 50px);
+      position: absolute;
+      top: 180px;
+      left: 270px;
+    }
 
-  @media (min-width: $desktop-width) {
-    left: 320px;
+    @media (min-width: $desktop-width) {
+      left: 320px;
+    }
   }
-}
 
 .cards__btn {
   @include font(bold, 18px, 18px);

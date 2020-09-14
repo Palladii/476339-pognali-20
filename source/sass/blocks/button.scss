@@ -129,7 +129,23 @@
       padding: 29px 0 0 33px;
     }
   }
-}
+
+    &--trans {
+      @include a();
+      @include size(100%, 62px);
+      border: 2px solid $basic-blue;
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 20px 0 0 22px;
+      font-weight: bold;
+      line-height: 18px;
+
+      @media (min-width: $tablet-width) {
+        width: 324px;
+        margin-top: 50px;
+      }
+    }
+  }
 
 
 //&--rectangle {
