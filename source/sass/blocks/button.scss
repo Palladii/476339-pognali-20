@@ -8,10 +8,20 @@
   border-radius: 25px;
   text-align: center;
 
+  &:hover,
+  &:focus {
+    background-color: $special-yellow;
+  }
+
+  &:active {
+    color: $color-buttom--opacity-blue;
+  }
+
+
   &--s {
-    width: 180px;
+    width: 190px;
     min-height: 40px;
-    @include font(bold, 17px, 40px);
+    @include font(bold, 20px, 40px);
     @include a();
     text-transform: uppercase;
     background-color: $basic-yellow;
@@ -105,14 +115,22 @@
   border: none;
   cursor: pointer;
 
+/*  &:hover,
+  &:focus {
+    background-color: $special-yellow;
+  }
+
+  &:active {
+    color: $color-buttom--opacity-blue; //$basic-special--blue-opacity
+  }*/
+
   &--s {
     @include a();
     @include font(bold, 18px, 18px);
     width: 100%;
     min-height: 62px;
-    text-transform: uppercase;
     background-color: $basic-yellow;
-    color: $color-bg--dark-blue;
+    color: $color-bg--dark-blue; //показать всё -$basic-special-blue
     padding: 23px 0 0 23px;
     border-radius: 10px;
 

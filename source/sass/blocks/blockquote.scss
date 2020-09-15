@@ -4,9 +4,12 @@
 }
 
 .blockquote__review {
+  position: relative;
   @include size(167px, 100%);
-  padding: 48px 0 109px;
+  padding-bottom: 109px;
   margin-top: -50px;
+  top: 35px;
+  right: 12px;
 
   @media (min-width: $tablet-width) {
     @include size(264px, 100%);

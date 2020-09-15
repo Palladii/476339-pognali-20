@@ -49,15 +49,6 @@
   }
 }
 
-.filter-people__fieldset-wrapper:focus .filter-people__level-wrap,
-.filter-people__fieldset-wrapper:focus-within .filter-people__level-wrap {
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    position: static;
-  }
-}
-
 .filter-people__level-wrap {
   @media (min-width: $tablet-width) {
     position: relative;
@@ -77,8 +68,6 @@
 }
 
 .filter-people__list {
-  display: none;
-
   @media (min-width: $tablet-width) {
     position: absolute;
     display: grid;
@@ -93,8 +82,6 @@
     display: none;
   }
 }
-
-
 
 .filter-people__legend {
   @include font(bold, 16px, 18px);
@@ -240,13 +227,17 @@
 //  margin-left: 19px;
 //}
 
-
-
-
-
-
-
 .filter-people__btn-submit {
   position: relative;
   left: 1px;
 }
+
+/* открывает меню
+.filter-people__fieldset-wrapper:focus .filter-people__level-wrap,
+.filter-people__fieldset-wrapper:focus-within .filter-people__level-wrap {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}*/

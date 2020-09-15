@@ -3,15 +3,17 @@
   @include ul();
 
   &--flex {
+    position: relative;
     @include ul();
     display: flex;
     flex-wrap: wrap;
-    margin-top: -40px;
+    margin-top: -15px;
+    top: -25px;
   }
 
   &--left {
     text-align: left;
-    padding: 0 0 44px 61px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
@@ -50,60 +52,87 @@
 .user-nav__contact-wrapper {
   color: $blue-original;
   @media (min-width: $desktop-width) {
+    position: relative;
     display: flex;
+    top: -21px;
+    right: 193px;
   }
 }
 
+
 .user-nav__svg-wrap {
+  position: relative;
   background-color: $special-dark-blue;
-  padding: 14px;
+  padding: 12px;
   border-radius: 50%;
   @include size(45px, 45px);
 
   &--orange {
     background-color: $color-title--orange;
-    left: 0;
-    top: -1px;
+    @include size(40px, 40px);
+
+    &:hover,
+    &:focus {
+      background-color: $color-icon--dark-orange;
+    }
   }
+
 
   &--yellow {
     background-color: $special-yellow;
-    left: 44px;
-    top: -1px;
+    @include size(40px, 40px);
+
+    &:hover,
+    &:focus {
+     background-color: $color-title--orange;
+    }
   }
 
-  &--big {
-    @include size(50px, 50px);
-    padding: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include size(68px, 68px);
+    padding: 18px;
   }
-
-  //@media (min-width: $tablet-width) {
-  //  &--mail {
-  //    display: none;
-  //  }
-  //
-  //  &--tel {
-  //    display: none;
-  //  }
-  //}
-
 
   @media (min-width: $desktop-width) {
     @include size(50px, 50px);
     padding: 16px;
     background-color: $special-yellow;
 
-    //&--mail {
-    //  @include size(50px, 50px);
-    //  padding: 16px;
-    //  background-color: $special-yellow;
-    //}
-    //
-    //&--tel {
-    //  @include size(50px, 50px);
-    //  padding: 16px;
-    //  background-color: $color-title--orange;
-    //}
+    &--tel {
+      background-color: $color-title--orange;
+
+
+      &:after {
+        position: absolute;
+        content: "";
+        @include size(18px, 18px);
+        background-image: url("../img/icon-phone-blue.svg");
+      }
+    }
+
+    &--mail {
+      background-color: $basic-yellow;
+
+      &:after {
+        position: absolute;
+        content: "";
+        @include size(17px, 14px);
+        background-image: url("../img/icon-mail-blue.svg");
+      }
+    }
+
+    &--yellow {
+     @include size(50px, 50px);
+    padding: 16px;
+    background-color: $special-yellow;
+    }
+
+    &--orange {
+    @include size(50px, 50px);
+    padding: 16px;
+    background-color: $color-title--orange;
+    }
   }
 }
 
@@ -141,6 +170,10 @@
   @include size(16px, 16px);
   fill: $basic-yellow;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     @include size(26px, 26px);
   }
@@ -148,6 +181,10 @@
   @media (min-width: $desktop-width) {
     @include size(28px, 28px);
     fill: $color-bg--blue;
+
+    &--off {
+      display: none;
+    }
   }
 }
 
@@ -157,6 +194,7 @@
 
   &--yellow {
     color: $basic-yellow;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {

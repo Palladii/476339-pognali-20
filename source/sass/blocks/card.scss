@@ -54,6 +54,7 @@
 
   &--round {
     border-radius: 50%;
+    @include size(70px, 70px);
   }
 
   @media (min-width: $tablet-width) {

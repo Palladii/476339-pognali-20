@@ -23,7 +23,6 @@
   color: $color-text--blue;
   text-transform: uppercase;
 
-
   &::before {
     position: absolute;
     content: "";
@@ -37,6 +36,20 @@
 .cards__btn {
   position: relative;
   margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow;
+  }
+
+  &:active {
+    color: $basic-special--blue-opacity;
+
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   &::after {
     position: absolute;

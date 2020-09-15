@@ -9,18 +9,18 @@ $opacity-black: rgba(0, 0, 0, 0.6);
 $color-bg--grey: #e2e5f2;
 $color-bg--light-grey: #e5e5e5;
 $blue-original: #182044;
-$color-bg--dark-blue: #161c35; //icon
+$color-bg--dark-blue: #161c35; //icon bg
+$color-buttom--opacity-blue: rgba(22, 28, 53, 0.3); //text-button-hover
 $color-bg--light-blue: #edeff6;
 $basic-extra-blue: #e6e8f1;
 $basic-medium-blue: #192144;
-
-$basic-dark-blue: #192144;
+$basic-dark-blue: #192144; //icon
 $special-dark-blue: #121936;
 $special-blue: #141b3b;
 $special-extra-blue: #132576;
 $basic-yellow: #ffd74b; //icon
-$special-yellow: #ffbd30;
-$color-title--orange: #ff8d30;
+$special-yellow: #ffbd30; //button-hover
+$color-title--orange: #ff8d30; //icon ссылка-auth
 $extra-orange: #f97676;
 $special-light-orange: #ffa530;
 $basic-grey: #444444;
@@ -51,7 +51,7 @@ $desktop-width: 1440px;
 
 $color-bg--blue: #161c35; //icon
 $special-orange: #ff8d30;
-$basic-special-blue: #1d2e5b; //стрелка
+$basic-special-blue: #1d2e5b; //стрелка,text-button
 $basic-special--blue-opacity: rgba(29, 46, 91, 0.3);
 $basic-blue: #192144; //icon
 $basic-light-blue: green;
@@ -59,3 +59,4 @@ $basic-light-blue: green;
 $color-menu--grey: #CCCCCC;
 $color-icon--dark-blue: #101D41; //icon
 $color-text--blue: #1d2e5b;
+$color-icon--dark-orange: F26926; //icon-hover

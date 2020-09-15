@@ -1,6 +1,5 @@
 .copyright {
-  @include font(normal, 16px, 16px);
-  color: $basic-grey;
+
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -11,10 +10,28 @@
   }
 }
 
+.copyright__text {
+  @include font(300px, 16px, 16px);
+  color: $basic-grey;
+}
+
 .copyright__link {
   @include size(30px, 40px);
 
   @media (min-width: $tablet-width) {
     margin: -5px 0 0 23px;
+  }
+}
+
+.copyright__svg {
+  fill: $basic-dark-blue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -5,7 +5,7 @@
   //@media (min-width: $tablet-width) {
   //  background-color: $color-bg--blue;
   //}
-  //
+
   @media (min-width: $desktop-width) {
     padding: 47px 0 11px;
   }
@@ -73,7 +73,13 @@
   }
 }
 
-.header__nav {
+.header__img {
+  &--blue {
+    display: none;
+  }
+}
+
+.header__site-nav {
   margin-bottom: 152px;
   color: $basic-medium-blue;
   @media (min-width: $tablet-width) {
@@ -97,6 +103,16 @@
   background-image: url("../img/icon_menu_mobile.svg");
   background-repeat: no-repeat;
 
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     left: 0;
     margin: 0 auto;
@@ -115,13 +131,32 @@
 
 .header__auth {
   display: none;
-  @media (min-width: $desktop-width) {
-    display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 188px;
+    position: absolute;
+    top: 0;
+    right: calc(50% - 135px);
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 }
 
+//Состояния меню
+
 .header--no-js {
-  background: $basic-white;
+  background-color: $basic-white;
+
+  .header__img--blue {
+    display: block;
+  }
+
+  .header__img--white {
+    display: none;
+  }
 
   .header__toggle {
     display: none;
@@ -131,10 +166,67 @@
     display: block;
   }
 
-  .header__user-nav {
+  .header__site-nav {
     color: $basic-blue;
   }
+
+  .header__auth {
+    display: block;
+    width: 270px;
+    position: absolute;
+    top: 270px;
+    right: calc(50% - 135px);
+    z-index: 100;
+    @media (min-width: $tablet-width) {
+      top: 27px;
+      right: 80px;
+      width: 188px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-bg--dark-blue;
+
+    .header__site-nav {
+      color: $basic-white;
+    }
+
+    .header__img--white {
+      display: block;
+    }
+
+    .header__img--blue {
+      display: none;
+    }
+
+    /*.user-nav__svg {
+      position: relative;
+    }
+
+    .user-nav__svg-wrap--tel {
+      &::after {
+        position: absolute;
+        content: "33s";
+        @include size(18px, 18px);
+        background-image: url(".../img/icon-phone-blue.svg");
+        fill: red;
+      }
+    }
+
+    .user-nav__svg-wrap--mail {
+      &::after {
+        position: absolute;
+        content: "33";
+        @include size(18px, 18px);
+        background-image: url(".../img/icon-mail-blue.svg");
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+      }
+    }*/
+  }
 }
+
 
 .header--on-scroll {
   position: fixed;
@@ -142,53 +234,95 @@
   z-index: 100;
   background-color: $basic-white;
 
-
-  .header__toggle {
-    background-image: url("../img/icon-menu.svg");
+  .header__img--white {
+    display: none;
   }
 
+  .header__img--blue {
+    display: block;
+  }
+
+  .header__toggle {
+    background-image: url("../img/menu-icon-grey.svg");
+  }
+
+  .header__auth {
+    display: block;
+    width: 270px;
+    position: absolute;
+    top: 270px;
+    right: calc(50% - 135px);
+    z-index: 100;
+    @media (min-width: $tablet-width) {
+      top: 27px;
+      right: 80px;
+      width: 188px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    .header__nav {
+    .header__site-nav {
       color: $basic-medium-blue;
     }
   }
 }
 
-@media (max-width: $desktop-width - 1) {
-  .header--nav-open {
-    background-color: $basic-white;
+.header--js-open {
+  background-color: $basic-white;
 
-    .header__wrapper {
-      position: absolute;
-      display: block;
-      width: 100%;
-      z-index: 100;
+  .header__img--white {
+    display: none;
+  }
+
+  .header__img--blue {
+    display: block;
+  }
+
+  .header__wrapper {
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header__toggle {
+    background-image: url("../img/icon-menu_mobile_close.svg");
+    @include size(19px, 19px);
+  }
+
+  .header__auth {
+    display: block;
+    width: 270px;
+    position: absolute;
+    top: 270px;
+    right: calc(50% - 135px);
+    z-index: 100;
+    @media (min-width: $tablet-width) {
+      top: 27px;
+      right: 80px;
+      width: 188px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-bg--dark-blue;
+
+    .header__site-nav {
+      color: $basic-white;
     }
 
-    .header__toggle {
-      background-image: url("../img/icon-menu_mobile_close.svg");
-      @include size(19px, 19px);
+    .header__img--white {
+      display: block;
     }
 
-    .header__auth {
-      display: block;
-      width: 270px;
-      position: absolute;
-      top: 270px;
-      right: calc(50% - 135px);
-      z-index: 100;
-      @media (min-width: $tablet-width) {
-        top: 27px;
-        right: 80px;
-        width: 188px;
-      }
+    .header__img--blue {
+      display: none;
     }
   }
 }
 
 
-
+/*@media (max-width: $desktop-width - 1) {*/
 //.header {
 //  position: relative;
 //  background-color: $color-bg--dark-blue;
