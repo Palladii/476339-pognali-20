@@ -1,3 +1,4 @@
+
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -5,6 +6,28 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
+const del = require("del");
+
+const clean = () => {
+  return del("build");
+};
+exports.clean = clean;
+
+const copy = () => {
+  return gulp.src([
+    "source/*.html",
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+};
+exports.copy = copy;
 
 // Styles
 
@@ -16,12 +39,21 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+const build = gulp.series(
+  clean,
+  copy,
+  styles
+);
+exports.build = build;
 
 // Server
 

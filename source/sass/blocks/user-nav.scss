@@ -52,10 +52,7 @@
 .user-nav__contact-wrapper {
   color: $blue-original;
   @media (min-width: $desktop-width) {
-    position: relative;
     display: flex;
-    top: -21px;
-    right: 193px;
   }
 }
 
@@ -135,30 +132,6 @@
     }
   }
 }
-
-//
-//.user-nav__link {
-//  display: flex;
-//  align-items: center;
-//  text-decoration: none;
-//  color: $basic-medium-blue;
-//}
-
-//.user-nav__btn {
-//  @include size(100%, 50px);
-//
-//  @media (min-width: $tablet-width) {
-//
-//  }
-//
-//  @media (min-width: $desktop-width) {
-//    margin-left: 0;
-//  }
-//}
-
-//.user-nav__tel-img {
-//  @include size(90px, 90px);
-//}
 
 .user-nav__link {
   display: flex;
