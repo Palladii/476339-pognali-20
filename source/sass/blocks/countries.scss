@@ -3,7 +3,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-@include font(bold, 60px, 60px);
+    @include font(bold, 60px, 60px);
     color: $basic-blue;
     margin-bottom: 30px;
   }

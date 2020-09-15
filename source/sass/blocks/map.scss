@@ -3,7 +3,7 @@
   margin-top: -30px;
   background-color: $basic-yellow;
   border-radius: 20px;
- /* z-index: -6;*/
+  /* z-index: -6;*/
 }
 
 .map__address {
@@ -39,12 +39,12 @@
 
   @media (min-width: $desktop-width) {
     width: 450px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+}
 
 .map__btn {
   position: relative;
@@ -75,7 +75,7 @@
   }
 
   &:active {
-   color: $opacity-white;
+    color: $opacity-white;
 
 
     &::after {

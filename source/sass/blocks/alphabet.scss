@@ -2,16 +2,16 @@
   border-spacing: 0;
 
   @media (min-width: $tablet-width) {
-padding: 35px 0 33px 27px;
+    padding: 35px 0 33px 27px;
 
     &--bg-dark {
-     background-color: $color-bg--grey;
+      background-color: $color-bg--grey;
       border-spacing: 44px 35px;
     }
   }
 
   @media (min-width: $desktop-width) {
-   border-spacing: 15px;
+    border-spacing: 15px;
   }
 }
 
@@ -38,11 +38,6 @@ padding: 35px 0 33px 27px;
     background-color: $basic-special-blue;
   }
 
-
-  //&--active-dark {
-  //  background-color: $basic-special-blue;
-  //  color: $basic-white;
-  //}
 
   @media (min-width: $tablet-width) {
     @include size(55px, 70px);
@@ -98,4 +93,3 @@ padding: 35px 0 33px 27px;
     }
   }
 }
-

@@ -17,7 +17,6 @@
     color: $color-buttom--opacity-blue;
   }
 
-
   &--s {
     width: 190px;
     min-height: 40px;
@@ -115,22 +114,13 @@
   border: none;
   cursor: pointer;
 
-/*  &:hover,
-  &:focus {
-    background-color: $special-yellow;
-  }
-
-  &:active {
-    color: $color-buttom--opacity-blue; //$basic-special--blue-opacity
-  }*/
-
   &--s {
     @include a();
     @include font(bold, 18px, 18px);
     width: 100%;
     min-height: 62px;
     background-color: $basic-yellow;
-    color: $color-bg--dark-blue; //показать всё -$basic-special-blue
+    color: $color-bg--dark-blue;
     padding: 23px 0 0 23px;
     border-radius: 10px;
 
@@ -148,54 +138,19 @@
     }
   }
 
-    &--trans {
-      @include a();
-      @include size(100%, 62px);
-      border: 2px solid $basic-blue;
-      background-color: transparent;
-      border-radius: 10px;
-      padding: 20px 0 0 22px;
-      font-weight: bold;
-      line-height: 18px;
+  &--trans {
+    @include a();
+    @include size(100%, 62px);
+    border: 2px solid $basic-blue;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px 0 0 22px;
+    font-weight: bold;
+    line-height: 18px;
 
-      @media (min-width: $tablet-width) {
-        width: 324px;
-        margin-top: 50px;
-      }
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      margin-top: 50px;
     }
   }
-
-
-//&--rectangle {
-//  @include size(100%, 62px);
-//  @include font(bold, 24px, 18px);
-//  color: $color-text--blue;
-//  text-transform: none;
-//  border-radius: 10px;
-//  padding: 22px 0 0 23px;
-//
-//  @media (min-width: $tablet-width) {
-//    @include font(bold, 24px, 24px);
-//    @include size(616px, 80px);
-//    height: 80px;
-//    padding-top: 28px;
-//    border-radius: 10px;
-//  }
-//
-//  @media (min-width: $desktop-width) {
-//    width: 274px;
-//    padding-top: 28px;
-//  }
-//}
-//
-//&--ellipse {
-//  @include font(bold, 17px, 20px);
-//  text-align: center;
-//  padding-top: 12px;
-//
-//  @media (min-width: $tablet-width) {
-//    @include font(bold, 20px, 20px);
-//    @include size(188px, 50px);
-//    padding-top: 16px;
-//  }
-//}
+}

@@ -3,11 +3,6 @@
   z-index: 5;
 
 
-  //&--padding-less {
-  //  margin: 0;
-  //  padding: 0;
-  //}
-
   @media (min-width: $tablet-width) {
     @include font-size(20px, 20px);
     width: 184px;
@@ -36,15 +31,4 @@
 .country-list__link {
   @include a();
   color: $basic-grey;
-
-  //&--grey-text {
-  // display: none;
-  //}
-
-  @media (min-width: $desktop-width) {
-    //&--grey-text {
-    //  display: block;
-    //  color: $basic-grey;
-    //}
-  }
 }
