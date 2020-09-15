@@ -11,7 +11,7 @@
 }
 
 .copyright__text {
-  @include font(300px, 16px, 16px);
+  @include font(300, 16px, 16px);
   color: $basic-grey;
 }
 
